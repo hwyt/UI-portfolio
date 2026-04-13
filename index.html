@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alex Chen - UI设计师作品集，专注于用户体验设计和界面设计">
+  <meta name="keywords" content="UI设计师, UX设计, 界面设计, 产品设计, 作品集">
+  <title>Alex Chen - UI设计师作品集</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- 👇 禁止右键 + 禁止拖拽保存图片的核心代码 -->
+  <script>
+    // 禁止右键菜单（保存图片/检查元素）
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+    
+    // 禁止键盘快捷键（Ctrl+S 保存 / Ctrl+U 查看源码）
+    document.addEventListener('keydown', function(e) {
+      // Ctrl+S (83) 或 Ctrl+U (85)
+      if (e.ctrlKey && (e.keyCode === 83 || e.keyCode === 85)) {
+        e.preventDefault();
+      }
+    });
+  </script>
+
+  <!-- 👇 CSS 防护样式 -->
+  <style>
+    /* 全局禁止拖拽 + 禁止选中 */
+    img {
+      -webkit-user-drag: none; /* 禁止webkit内核拖拽 */
+      user-select: none;       /* 禁止选中文字/图片 */
+      pointer-events: none;    /* 禁止点击图片 */
+    }
+  </style>
+  
+</head>
+<body>
+  <!-- 作品详情模态框模板 -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
+  <div class="modal-content" onclick="event.stopPropagation()">
+    <div class="modal-header">
+      <h2 class="modal-title" id="modal-title">作品标题</h2>
+      <button class="modal-close" onclick="closeModal(event)">×</button>
+    </div>
+    <div class="modal-body" id="modal-body">
+      <!-- 动态内容 -->
+    </div>
+  </div>
+</div>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">Alex Chen</a>
+    <div style="display: flex; align-items: center;">
+      <button class="navbar-toggle" onclick="toggleMenu()" aria-label="切换菜单">☰</button>
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="切换主题">
+        <span class="theme-icon theme-icon-sun">☀️</span>
+        <span class="theme-icon theme-icon-moon">🌙</span>
+      </button>
+    </div>
+    <ul class="navbar-menu" id="navbarMenu">
+      <li><a href="index.html" class="active">首页</a></li>
+      <li><a href="works.html">作品</a></li>
+      <li><a href="about.html">关于</a></li>
+      <li><a href="contact.html">联系</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero 区域 -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">✨ 欢迎来到我的作品集</div>
+        <h1 class="hero-title">用设计创造<br>有意义的用户体验</h1>
+        <p class="hero-subtitle">
+          我叫 <span class="primary-text">胡北</span> ，一名专注于产品设计的 UI/UX 设计师。 <br>
+          我热爱创造直观、美观且易于使用的数字产品。
+        </p>
+
+        <div class="hero-actions">
+          <a href="works.html" class="btn btn-primary">
+            查看作品 →
+          </a>
+          <a href="contact.html" class="btn btn-secondary">
+            联系我
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 作品预览区域 -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">精选作品</h2>
+        <p class="section-subtitle">按三级分类展示：APP、PC、小程序、电商、平面、建模、AIGC</p>
+      </div>
+      <div class="grid grid-3">
+        <!-- 作品卡片 1 -->
+        <article class="card" onclick="openModal('modal-fintech-1')"><!-- 卡片跳转详情-接下面修改 -->
+          <div class="watermark-wrap"><!-- 添加水印 -->
+            <img class="card-image" src="./images/works/featured-fintech.jpeg" alt="金融科技应用" style="height: 200px; object-fit: cover; border-radius: 0.75rem; margin-bottom: 1rem;">
+          </div>
+          <h3 class="card-title">金融科技应用</h3>
+          <p class="card-description">
+            重新设计了移动端金融应用，提升用户体验，将用户转化率提高了45%。
+          </p>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span class="card-tag">移动端</span>
+              <span class="card-tag">金融科技</span>
+            </div>
+            <a href="works.html" class="card-link">查看详情 →</a>
+          </div>
+        </article>
+
+        <!-- 作品卡片 2 -->
+        <article class="card" onclick="openModal('modal-ec-b2c-1')">
+          <div class="watermark-wrap"><!-- 添加水印 -->
+            <img class="card-image" src="./images/works/featured-ecommerce.jpeg" alt="电商平台重设计" style="height: 200px; object-fit: cover; border-radius: 0.75rem; margin-bottom: 1rem;">
+          </div>
+          <h3 class="card-title">电商平台重设计</h3>
+          <p class="card-description">
+            为大型电商平台进行全面的视觉和交互设计优化，提升品牌形象。
+          </p>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span class="card-tag">响应式</span>
+              <span class="card-tag">电商</span>
+            </div>
+            <a href="works.html" class="card-link">查看详情 →</a>
+          </div>
+        </article>
+
+        <!-- 作品卡片 3 -->
+        <article class="card" onclick="openModal('modal-mp-3')">
+          <div class="watermark-wrap"><!-- 添加水印 -->
+            <img class="card-image" src="./images/works/featured-healthcare.jpeg" alt="医疗健康平台" style="height: 200px; object-fit: cover; border-radius: 0.75rem; margin-bottom: 1rem;">
+          </div>
+          <h3 class="card-title">医疗健康平台</h3>
+          <p class="card-description">
+            设计了一个易于使用的医疗健康管理平台，帮助患者更好地管理健康。
+          </p>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span class="card-tag">Web应用</span>
+              <span class="card-tag">医疗</span>
+            </div>
+            <a href="works.html" class="card-link">查看详情 →</a>
+          </div>
+        </article>
+
+        <!-- 作品卡片 4 -->
+        <article class="card" onclick="openModal('modal-web-1')">
+          <div class="watermark-wrap"><!-- 添加水印 -->
+            <img class="card-image" src="./images/works/pc-crm.jpeg" alt="企业CRM系统" style="height: 200px; object-fit: cover; border-radius: 0.75rem; margin-bottom: 1rem;">
+          </div>
+          <h3 class="card-title">企业CRM系统</h3>
+          <p class="card-description">
+            客户关系管理系统，包含销售、营销、服务模块，提升企业运营效率。
+          </p>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span class="card-tag">B2B</span>
+              <span class="card-tag">Dashboard</span>
+            </div>
+            <a href="works.html" class="card-link">查看详情 →</a>
+          </div>
+        </article>
+
+        <!-- 作品卡片 5 -->
+        <article class="card" onclick="openModal('modal-fitness-1')">
+          <div class="watermark-wrap"><!-- 添加水印 -->
+            <img class="card-image" src="./images/works/app-fitness.jpeg" alt="健身追踪应用" style="height: 200px; object-fit: cover; border-radius: 0.75rem; margin-bottom: 1rem;">
+          </div>
+          <h3 class="card-title">健身追踪应用</h3>
+          <p class="card-description">
+            运动数据记录、训练计划、健康数据分析，帮助用户实现健康目标。
+          </p>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span class="card-tag">iOS</span>
+              <span class="card-tag">健康</span>
+            </div>
+            <a href="works.html" class="card-link">查看详情 →</a>
+          </div>
+        </article>
+
+        <!-- 作品卡片 6 -->
+        <article class="card" onclick="openModal('modal-aigc-1')">
+          <div class="watermark-wrap"><!-- 添加水印 -->
+            <img class="card-image" src="./images/works/aigc-illustration.jpeg" alt="AI插画创作" style="height: 200px; object-fit: cover; border-radius: 0.75rem; margin-bottom: 1rem;">
+          </div>
+          <h3 class="card-title">AI插画创作</h3>
+          <p class="card-description">
+            使用Midjourney、Stable Diffusion创作的商业插画，探索AI辅助设计。
+          </p>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span class="card-tag">AIGC</span>
+              <span class="card-tag">插画</span>
+            </div>
+            <a href="works.html" class="card-link">查看详情 →</a>
+          </div>
+        </article>
+      </div>
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="works.html" class="btn btn-primary">查看全部作品</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关于我区域 -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">关于我</h2>
+        <p class="section-subtitle">了解我的设计理念和价值观</p>
+      </div>
+      <div class="card" style="max-width: 800px; margin: 0 auto; text-align: center;">
+        <p style="margin-bottom: 1rem; color: var(--text-primary);">
+          我相信好的设计不仅仅是美观，更重要的是解决问题。我的设计方法论强调以用户为中心，
+          通过深入的用户研究和数据分析，创造出既美观又实用的产品。
+        </p>
+        <p style="color: var(--text-secondary);">
+          拥有3年以上的设计经验，我擅长将复杂的需求转化为简洁优雅的解决方案。
+          我的设计理念是"简单即美"，始终追求极致的用户体验。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">© 2022 - 2026  Bei Hu.  用设计创造有意义的用户体验.</p>
+      <div style="margin-top: 1rem; display: flex; justify-content: center; gap: 1rem;">
+        <a href="works.html" class="card-link" style="color: var(--text-secondary);">查看作品</a>
+        <span style="color: var(--text-secondary);">|</span>
+        <a href="contact.html" class="card-link" style="color: var(--text-secondary);">联系我</a>
+        <!-- <a href="contact.html" class="card-link" style="color: var(--text-secondary);">Email</a>
+        <span style="color: var(--text-secondary);">|</span>
+        <a href="#" class="card-link" style="color: var(--text-secondary);">LinkedIn</a>
+        <span style="color: var(--text-secondary);">|</span>
+        <a href="#" class="card-link" style="color: var(--text-secondary);">Behance</a>
+        <span style="color: var(--text-secondary);">|</span>
+        <a href="#" class="card-link" style="color: var(--text-secondary);">Dribbble</a> -->
+      </div>
+    </div>
+  </footer>
+
+  <!-- 移动端菜单脚本 -->
+  <script>
+    // 移动端菜单切换
+    function toggleMenu() {
+      const menu = document.getElementById('navbarMenu');
+      menu.classList.toggle('active');
+    }
+
+    // 点击导航链接后关闭菜单
+    document.querySelectorAll('.navbar-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('navbarMenu').classList.remove('active');
+      });
+    });
+
+    // 主题切换功能
+    function toggleTheme() {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    }
+
+    // 初始化主题（优先级：localStorage > 系统偏好）
+    function initTheme() {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    }
+
+    // 页面加载时初始化主题
+    initTheme();
+
+
+    // 修改的
+    // 打开模态框
+function openModal(modalId) {
+  const overlay = document.getElementById('modal-overlay');
+  const title = document.getElementById('modal-title');
+  const body = document.getElementById('modal-body');
+  
+  const projectData = {
+    'modal-fintech-1': {
+      title: '数字钱包应用',
+      image: 'url(./images/works/app-digital-wallet.jpeg)',
+      description: '这是一款面向年轻人的数字钱包应用，提供多币种管理、即时转账、账单记录等核心功能。',
+      tags: ['iOS', 'Android', '金融科技', '移动支付'],
+      stats: { users: '500K+', satisfaction: '98%', conversion: '+45%' },
+      tools: 'Figma, Sketch, Principle',
+      role: 'UI/UX设计师',
+      duration: '2023年6月 - 2023年10月'
+    },
+    'modal-ec-b2c-1': {
+      title: '时尚服饰商城',
+      image: 'url(./images/works/ecom-fashion.jpeg)',
+      description: '服装配饰电商网站，包含商品浏览、购物车、支付流程。',
+      tags: ['时尚', '商城', 'B2C'],
+      stats: { users: '500K+', satisfaction: '95%', conversion: '+48%' },
+      tools: 'Figma, Sketch, Principle',
+      role: 'UI/UX设计师',
+      duration: '2023年6月 - 2023年9月'
+    },
+    'modal-mp-3': {
+      title: '预约挂号小程序',
+      image: 'url(./images/works/mini-hospital.jpeg)',
+      description: '医院预约挂号、医生排班、在线问诊。',
+      tags: ['医疗', '预约', '小程序'],
+      stats: { users: '200K+', satisfaction: '98%', conversion: '+52%' },
+      tools: 'Figma, Principle, After Effects',
+      role: 'UI/UX设计师',
+      duration: '2023年1月 - 2023年4月'
+    },
+    'modal-web-1': {
+      title: '企业CRM系统',
+      image: 'url(./images/works/pc-crm.jpeg)',
+      description: '客户关系管理系统，包含销售、营销、服务模块。',
+      tags: ['B2B', 'Dashboard', '企业级'],
+      stats: { users: '50K+', satisfaction: '93%', conversion: '+30%' },
+      tools: 'Figma, Sketch, InVision',
+      role: 'UI/UX设计师',
+      duration: '2023年5月 - 2023年9月'
+    },
+    'modal-fitness-1': {
+      title: '健身追踪应用',
+      image: 'url(./images/works/app-fitness.jpeg)',
+      description: '运动数据记录、训练计划、健康数据分析。',
+      tags: ['健身', '健康', 'iOS', 'Android'],
+      stats: { users: '400K+', satisfaction: '97%', conversion: '+42%' },
+      tools: 'Figma, Principle, Lottie',
+      role: 'UI/UX设计师',
+      duration: '2022年10月 - 2023年2月'
+    },
+    'modal-aigc-1': {
+      title: 'AI插画创作',
+      image: 'url(./images/works/aigc-illustration.jpeg)',
+      description: '使用Midjourney、Stable Diffusion创作的商业插画。',
+      tags: ['插画', '商业', 'AI创作'],
+      stats: { users: 'N/A', satisfaction: '100%', conversion: 'N/A' },
+      tools: 'Midjourney, Stable Diffusion, Photoshop',
+      role: 'AI艺术家',
+      duration: '2023年10月 - 至今'
+    }
+  };
+  
+  const data = projectData[modalId];
+  title.textContent = data.title;
+  const imageUrl = data.image.replace(/url\((.*)\)/, '$1');
+  body.innerHTML = `
+    <img class="modal-image" src="${imageUrl}" alt="${data.title}" style="width:100%;height:auto;object-fit:cover;border-radius:0.75rem;margin-bottom:1.5rem">
+    <div class="modal-stats">
+      <div class="modal-stat-item"><div class="modal-stat-value">${data.stats.users}</div><div class="modal-stat-label">用户数量</div></div>
+      <div class="modal-stat-item"><div class="modal-stat-value">${data.stats.satisfaction}</div><div class="modal-stat-label">用户满意度</div></div>
+      <div class="modal-stat-item"><div class="modal-stat-value">${data.stats.conversion}</div><div class="modal-stat-label">转化率提升</div></div>
+    </div>
+    <div class="modal-section"><h3 class="modal-section-title">项目描述</h3><p class="modal-description">${data.description}</p></div>
+    <div class="modal-section"><h3 class="modal-section-title">使用技术</h3><div class="modal-tags">${data.tags.map(tag=>`<span class="modal-tag">${tag}</span>`).join('')}</div></div>
+    <div class="modal-section"><h3 class="modal-section-title">项目信息</h3><p style="color:var(--text-secondary);"><strong>工具：</strong>${data.tools}<br><strong>角色：</strong>${data.role}<br><strong>时间：</strong>${data.duration}</p></div>
+  `;
+  overlay.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+// 关闭模态框
+function closeModal(event) {
+  event.preventDefault();
+  event.stopPropagation();
+  document.getElementById('modal-overlay').classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+// ESC关闭
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeModal(e);
+});
+  </script>
+</body>
+</html>

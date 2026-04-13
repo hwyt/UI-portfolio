@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="了解 Alex Chen 的专业技能、工作经历和教育背景">
+  <title>关于我 - Bei Hu UI设计师</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">Bei Hu</a>
+    <div style="display: flex; align-items: center;">
+      <button class="navbar-toggle" onclick="toggleMenu()" aria-label="切换菜单">☰</button>
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="切换主题">
+        <span class="theme-icon theme-icon-sun">☀️</span>
+        <span class="theme-icon theme-icon-moon">🌙</span>
+      </button>
+    </div>
+    <ul class="navbar-menu" id="navbarMenu">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="works.html">作品</a></li>
+      <li><a href="about.html" class="active">关于</a></li>
+      <li><a href="contact.html">联系</a></li>
+    </ul>
+  </nav>
+
+  <!-- 页面标题区域 -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h1 class="section-title">关于我</h1>
+        <p class="section-subtitle">专业技能 · 工作经历 · 教育背景</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 个人简介 -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="card" style="max-width: 900px; margin: 0 auto;">
+        <div style="display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;">
+          <div style="flex: 1; min-width: 250px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1rem; background: var(--gradient-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Bei Hu 胡北</h2>
+            <p style="color: var(--text-primary); margin-bottom: 0.5rem;">
+              <strong> UI/UX 设计师</strong> | 3年+ 设计经验
+            </p>
+            <p style="color: var(--text-secondary); line-height: 1.8;">
+              我相信好的设计不仅仅是美观，更重要的是解决问题。我的设计方法论强调以用户为中心，通过深入的用户研究和数据分析，创造出既美观又实用的产品。设计理念是"简单即美"，始终追求极致的用户体验。
+            </p>
+          </div>
+          <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; justify-content: center;">
+            <div style="text-align: center;">
+              <div style="font-size: 2rem; font-weight: 700; background: var(--gradient-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">5+</div>
+              <div style="color: var(--text-secondary); font-size: 0.875rem;">年设计经验</div>
+            </div>
+            <div style="text-align: center;">
+              <div style="font-size: 2rem; font-weight: 700; background: var(--gradient-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">50+</div>
+              <div style="color: var(--text-secondary); font-size: 0.875rem;">完成项目</div>
+            </div>
+            <div style="text-align: center;">
+              <div style="font-size: 2rem; font-weight: 700; background: var(--gradient-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">1M+</div>
+              <div style="color: var(--text-secondary); font-size: 0.875rem;">服务用户</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 专业技能 -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">专业技能</h2>
+        <p class="section-subtitle">全面的设计能力，为项目提供完整解决方案</p>
+      </div>
+      
+      <div class="skills-grid">
+        <!-- 设计工具 -->
+        <div class="skills-category">
+          <h3 class="skills-category-title">🎨 设计工具</h3>
+          <div class="skills-list">
+            <span class="skill-item">Figma</span>
+            <span class="skill-item">Sketch</span>
+            <span class="skill-item">Adobe XD</span>
+            <span class="skill-item">Photoshop</span>
+            <span class="skill-item">Illustrator</span>
+            <span class="skill-item">After Effects</span>
+            <span class="skill-item">Principle</span>
+            <span class="skill-item">Framer</span>
+          </div>
+        </div>
+
+        <!-- 设计方法论 -->
+        <div class="skills-category">
+          <h3 class="skills-category-title">📋 设计方法论</h3>
+          <div class="skills-list">
+            <span class="skill-item">用户研究</span>
+            <span class="skill-item">用户画像</span>
+            <span class="skill-item">信息架构</span>
+            <span class="skill-item">原型设计</span>
+            <span class="skill-item">交互设计</span>
+            <span class="skill-item">可用性测试</span>
+            <span class="skill-item">设计系统</span>
+            <span class="skill-item">组件库</span>
+          </div>
+        </div>
+
+        <!-- 业务领域 -->
+        <div class="skills-category">
+          <h3 class="skills-category-title">💼 业务领域</h3>
+          <div class="skills-list">
+            <span class="skill-item">金融科技</span>
+            <span class="skill-item">电商平台</span>
+            <span class="skill-item">医疗健康</span>
+            <span class="skill-item">在线教育</span>
+            <span class="skill-item">企业SaaS</span>
+            <span class="skill-item">社交娱乐</span>
+            <span class="skill-item">数据可视化</span>
+            <span class="skill-item">Dashboard</span>
+          </div>
+        </div>
+
+        <!-- 软技能 -->
+        <div class="skills-category">
+          <h3 class="skills-category-title">🤝 软技能</h3>
+          <div class="skills-list">
+            <span class="skill-item">跨部门沟通</span>
+            <span class="skill-item">团队协作</span>
+            <span class="skill-item">项目管理</span>
+            <span class="skill-item">需求分析</span>
+            <span class="skill-item">创新思维</span>
+            <span class="skill-item">快速学习</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 工作经历 -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">工作经历</h2>
+        <p class="section-subtitle">职业发展轨迹和专业成长历程</p>
+      </div>
+      <div class="timeline">
+        
+        <!-- 工作 1 -->
+        <div class="timeline-item">
+          <div class="timeline-date">2022 - 至今</div>
+          <h3 class="timeline-title">高级UI/UX设计师</h3>
+          <div class="timeline-company">某知名互联网科技公司 | 北京</div>
+          <div class="timeline-description">
+            负责公司核心产品线的设计工作，包括金融科技应用和电商平台。带领设计团队完成多个重要项目，建立了完整的设计系统。主导的用户体验优化项目使产品转化率提升45%，用户满意度提升30%。
+          </div>
+        </div>
+
+        <!-- 工作 2 -->
+        <div class="timeline-item">
+          <div class="timeline-date">2020 - 2022</div>
+          <h3 class="timeline-title">UI/UX设计师</h3>
+          <div class="timeline-company">创新科技初创公司 | 上海</div>
+          <div class="timeline-description">
+            作为核心设计师，从零开始设计公司首款医疗健康管理平台。负责全流程设计，包括用户研究、交互设计、视觉设计和可用性测试。产品上线后累计服务用户超过50万。
+          </div>
+        </div>
+
+        <!-- 工作 3 -->
+        <div class="timeline-item">
+          <div class="timeline-date">2018 - 2020</div>
+          <h3 class="timeline-title">初级UI设计师</h3>
+          <div class="timeline-company">数字营销代理公司 | 深圳</div>
+          <div class="timeline-description">
+            负责多个客户的移动应用和网站界面设计工作。参与超过20个项目的视觉设计，涵盖电商、教育、娱乐等多个行业。
+          </div>
+        </div>
+
+        <!-- 工作 4 -->
+        <div class="timeline-item">
+          <div class="timeline-date">2017 - 2018</div>
+          <h3 class="timeline-title">UI设计实习生</h3>
+          <div class="timeline-company">游戏开发公司 | 广州</div>
+          <div class="timeline-description">
+            协助资深设计师完成游戏界面的视觉设计和素材制作。参与了两款手游项目的界面设计工作。
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 教育背景与认证 -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">教育背景 & 认证</h2>
+        <p class="section-subtitle">为设计生涯打下坚实基础</p>
+      </div>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3 style="font-size: 1.125rem; margin-bottom: 1rem;">🎓 教育背景</h3>
+          <div style="padding: 1rem; background: var(--surface-light); border-radius: var(--radius-lg);">
+            <div style="font-weight: 600; margin-bottom: 0.25rem;">数字媒体艺术学士</div>
+            <div style="color: var(--text-secondary); font-size: 0.875rem;">某知名美术学院 · 2013-2017</div>
+            <div style="color: var(--text-secondary); font-size: 0.875rem; margin-top: 0.5rem;">全国大学生设计大赛金奖</div>
+          </div>
+        </div>
+        <div class="card">
+          <h3 style="font-size: 1.125rem; margin-bottom: 1rem;">📜 专业认证</h3>
+          <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <div style="padding: 0.75rem; background: var(--surface-light); border-radius: var(--radius-lg);">
+              <div style="font-weight: 600; font-size: 0.9rem;">Google UX Design Certificate</div>
+              <div style="color: var(--text-secondary); font-size: 0.8rem;">2023</div>
+            </div>
+            <div style="padding: 0.75rem; background: var(--surface-light); border-radius: var(--radius-lg);">
+              <div style="font-weight: 600; font-size: 0.9rem;">Figma Certified Professional</div>
+              <div style="color: var(--text-secondary); font-size: 0.8rem;">2022</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 核心优势 -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">核心优势</h2>
+        <p class="section-subtitle">让我在众多设计师中脱颖而出的关键能力</p>
+      </div>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;">📊 数据驱动设计</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem;">
+            习惯使用数据分析工具验证设计决策，确保设计能够真正提升产品指标。
+          </p>
+        </div>
+        <div class="card">
+          <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;">🎨 设计系统专家</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem;">
+            擅长从零构建设计系统，包括组件库、设计规范，大大提升团队协作效率。
+          </p>
+        </div>
+        <div class="card">
+          <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;">🔄 全流程经验</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem;">
+            拥有从需求分析到开发交付的完整项目经验，能够独立把控项目质量。
+          </p>
+        </div>
+        <div class="card">
+          <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;">💬 高效沟通</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem;">
+            擅长向不同角色清晰表达设计思路，能够快速理解和响应需求变化。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">© 2022 - 2026  Bei Hu.  用设计创造有意义的用户体验.</p>
+      <div style="margin-top: 1rem; display: flex; justify-content: center; gap: 1rem;">
+        <a href="index.html" class="card-link" style="color: var(--text-secondary);">返回首页</a>
+        <span style="color: var(--text-secondary);">|</span>
+        <a href="contact.html" class="card-link" style="color: var(--text-secondary);">联系我</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 移动端菜单脚本 -->
+  <script>
+    // 主题切换功能
+    function toggleTheme() {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    }
+
+    // 初始化主题
+    function initTheme() {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    }
+
+    // 页面加载时初始化主题
+    initTheme();
+
+    // 移动端菜单切换
+    function toggleMenu() {
+      const menu = document.getElementById('navbarMenu');
+      menu.classList.toggle('active');
+    }
+
+    document.querySelectorAll('.navbar-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('navbarMenu').classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>

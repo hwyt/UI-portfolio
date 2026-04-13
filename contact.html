@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="联系 Alex Chen，UI设计师。提供专业的设计服务，包括产品设计、用户体验设计等">
+  <title>联系我 - Alex Chen UI设计师</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">Alex Chen</a>
+    <div style="display: flex; align-items: center;">
+      <button class="navbar-toggle" onclick="toggleMenu()" aria-label="切换菜单">☰</button>
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="切换主题">
+        <span class="theme-icon theme-icon-sun">☀️</span>
+        <span class="theme-icon theme-icon-moon">🌙</span>
+      </button>
+    </div>
+    <ul class="navbar-menu" id="navbarMenu">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="works.html">作品</a></li>
+      <li><a href="about.html">关于</a></li>
+      <li><a href="contact.html" class="active">联系</a></li>
+    </ul>
+  </nav>
+
+  <!-- 页面标题区域 -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h1 class="section-title">联系我</h1>
+        <p class="section-subtitle">期待与你的合作，一起创造出色的产品体验</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系信息 -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-info">
+        
+        <!-- 邮箱 -->
+        <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div>
+            <div class="contact-label">邮箱</div>
+            <div class="contact-value">alex.chen.design@example.com</div>
+          </div>
+        </div>
+
+        <!-- 电话 -->
+        <div class="contact-item">
+          <div class="contact-icon">📱</div>
+          <div>
+            <div class="contact-label">电话</div>
+            <div class="contact-value">+86 138-0000-0000</div>
+          </div>
+        </div>
+
+        <!-- 位置 -->
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <div class="contact-label">位置</div>
+            <div class="contact-value">北京市朝阳区</div>
+          </div>
+        </div>
+
+        <!-- LinkedIn -->
+        <div class="contact-item">
+          <div class="contact-icon">💼</div>
+          <div>
+            <div class="contact-label">LinkedIn</div>
+            <a href="https://linkedin.com" class="contact-value" style="color: var(--primary); text-decoration: none;">linkedin.com/in/alexchen</a>
+          </div>
+        </div>
+
+        <!-- Behance -->
+        <div class="contact-item">
+          <div class="contact-icon">🎨</div>
+          <div>
+            <div class="contact-label">Behance</div>
+            <a href="https://behance.net" class="contact-value" style="color: var(--primary); text-decoration: none;">behance.net/alexchen</a>
+          </div>
+        </div>
+
+        <!-- Dribbble -->
+        <div class="contact-item">
+          <div class="contact-icon">🏀</div>
+          <div>
+            <div class="contact-label">Dribbble</div>
+            <a href="https://dribbble.com" class="contact-value" style="color: var(--primary); text-decoration: none;">dribbble.com/alexchen</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 合作类型 -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">合作类型</h2>
+        <p class="section-subtitle">我能为你提供的专业服务</p>
+      </div>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">💼 全职机会</h3>
+          <p style="color: var(--text-secondary);">
+            如果你有全职UI/UX设计师的职位空缺，我非常期待加入你的团队。
+            我擅长从零到一的产品设计，也有丰富的优化迭代经验。
+          </p>
+        </div>
+        <div class="card">
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">🤝 项目合作</h3>
+          <p style="color: var(--text-secondary);">
+            如果你有短期或长期的设计项目需求，我可以提供专业的UI/UX设计服务。
+            包括用户体验设计、界面设计、设计系统构建等。
+          </p>
+        </div>
+        <div class="card">
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">🎓 设计咨询</h3>
+          <p style="color: var(--text-secondary);">
+            如果你需要设计方面的专业建议，如用户体验优化、设计评审、
+            设计系统构建等，我很乐意提供咨询服务。
+          </p>
+        </div>
+        <div class="card">
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">🌟 设计工作坊</h3>
+          <p style="color: var(--text-secondary);">
+            如果你的团队需要提升设计能力，我可以组织设计工作坊，
+            分享设计思维、设计工具使用和最佳实践。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 快速联系表单 -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">快速留言</h2>
+        <p class="section-subtitle">填写下方表单，我会尽快回复你</p>
+      </div>
+      <form class="form" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label for="name" class="form-label">你的姓名</label>
+          <input type="text" id="name" class="form-input" placeholder="请输入你的姓名" required>
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-label">邮箱地址</label>
+          <input type="email" id="email" class="form-input" placeholder="请输入你的邮箱" required>
+        </div>
+        <div class="form-group">
+          <label for="type" class="form-label">合作类型</label>
+          <select id="type" class="form-input" style="cursor: pointer;">
+            <option value="fulltime">全职机会</option>
+            <option value="project">项目合作</option>
+            <option value="consulting">设计咨询</option>
+            <option value="workshop">设计工作坊</option>
+            <option value="other">其他</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message" class="form-label">留言内容</label>
+          <textarea id="message" class="form-textarea" placeholder="请简单描述你的需求或想法..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">发送留言</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- 工作时间 -->
+  <section class="section">
+    <div class="container">
+      <div class="card" style="max-width: 600px; margin: 0 auto; text-align: center;">
+        <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">工作时间</h3>
+        <div style="color: var(--text-secondary); line-height: 1.8;">
+          <p>周一至周五：9:00 - 18:00</p>
+          <p>周末：预约制</p>
+          <p style="margin-top: 0.5rem; color: var(--text-muted);">
+            通常我会在24小时内回复所有邮件和留言
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">© 2022 - 2026  Bei Hu.  用设计创造有意义的用户体验.</p>
+      <div style="margin-top: 1rem; display: flex; justify-content: center; gap: 1rem;">
+        <a href="index.html" class="card-link" style="color: var(--text-secondary);">返回首页</a>
+        <span style="color: var(--text-secondary);">|</span>
+        <a href="works.html" class="card-link" style="color: var(--text-secondary);">查看作品</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 移动端菜单脚本 -->
+  <script>
+    // 主题切换功能
+    function toggleTheme() {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    }
+
+    // 初始化主题
+    function initTheme() {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    }
+
+    // 页面加载时初始化主题
+    initTheme();
+
+    // 移动端菜单切换
+    function toggleMenu() {
+      const menu = document.getElementById('navbarMenu');
+      menu.classList.toggle('active');
+    }
+
+    document.querySelectorAll('.navbar-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('navbarMenu').classList.remove('active');
+      });
+    });
+
+    // 表单提交处理
+    function handleSubmit(event) {
+      event.preventDefault();
+      
+      // 获取表单数据
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const type = document.getElementById('type').value;
+      const message = document.getElementById('message').value;
+      
+      // 显示成功消息
+      alert('感谢你的留言！我会尽快通过邮箱与你联系。\n\n姓名：' + name + '\n邮箱：' + email + '\n类型：' + type);
+      
+      // 清空表单
+      document.getElementById('name').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('message').value = '';
+      document.getElementById('type').selectedIndex = 0;
+    }
+  </script>
+</body>
+</html>
