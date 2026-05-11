@@ -37,7 +37,7 @@
 <body>
   <!-- 导航栏 -->
   <nav class="navbar">
-    <a href="index.html" class="navbar-brand">Alex Chen</a>
+    <a href="index.html" class="navbar-brand">Bei Hu UI Portfolio</a>
     <div style="display: flex; align-items: center;">
       <button class="navbar-toggle" onclick="toggleMenu()" aria-label="切换菜单">☰</button>
       <button class="theme-toggle" onclick="toggleTheme()" aria-label="切换主题">
@@ -68,14 +68,13 @@
     <div class="container">
       <div class="category-nav">
         <button class="category-tab active" data-category="pc">PC</button>
-        <!-- <button class="category-tab" data-category="B2B">B 端设计</button> -->
         <button class="category-tab" data-category="app">APP</button>
         <button class="category-tab" data-category="miniprogram">小程序</button>
-        <button class="category-tab" data-category="ecommerce">电商</button>
         <button class="category-tab" data-category="graphic">平面</button>
+        <button class="category-tab" data-category="Data Visualization">数据可视化</button>
         <button class="category-tab" data-category="modeling">建模</button>
-        <button class="category-tab" data-category="aigc">数据可视化</button>
-        <!-- <button class="category-tab" data-category="Virtual Simulation">虚拟仿真软件</button> -->
+        <button class="category-tab" data-category="ecommerce">电商</button>
+        
       </div>
     </div>
   </section>
@@ -91,21 +90,21 @@
         <div class="subcategory-section">
           <div class="subcategory-header" onclick="toggleSubcategory(this)">
             <h2 class="subcategory-title">🌐 Web应用</h2>
-            <span class="subcategory-count">3 个作品</span>
+            <span class="subcategory-count">2 个作品</span>
           </div>
           <div class="subcategory-content">
             <div class="works-grid works-grid-3">
               <div class="work-card" onclick="openModal('modal-web-1')">
                 <div class="watermark-wrap"><!-- 添加水印 -->
-                  <img class="work-card-image " src="./images/works/pc-crm.jpeg" alt="企业CRM系统">
+                  <img class="work-card-image " src="./images/works/PC_South_fm.jpg" alt="南方测绘">
                 </div>
                 <div class="work-card-body">
-                  <h3 class="work-card-title">企业CRM系统</h3>
-                  <p class="work-card-description">客户关系管理系统，包含销售、营销、服务模块</p>
+                  <h3 class="work-card-title">南方测绘教育</h3>
+                  <p class="work-card-description">南方测绘教育研究院是南方旗下一款集测绘虚拟仿真教学、高校测绘职业技能竞赛以及校企合作的平台</p>
                   <div class="work-card-meta">
                     <div class="work-card-tags">
-                      <span class="work-card-tag">B2B</span>
-                      <span class="work-card-tag">Dashboard</span>
+                      <span class="work-card-tag">定制化</span>
+                      <span class="work-card-tag">研发</span>
                     </div>
                     <span class="work-card-view">查看详情 →</span>
                   </div>
@@ -113,36 +112,22 @@
               </div>
               <div class="work-card" onclick="openModal('modal-web-2')">
                 <div class="watermark-wrap"><!-- 添加水印 -->
-                  <img class="work-card-image" src="./images/works/pc-education.jpeg" alt="在线教育平台">
+                  <img class="work-card-image " src="./images/works/PC_lgdl_fm.jpg" alt="流固动力科技">
                 </div>
                 <div class="work-card-body">
-                  <h3 class="work-card-title">在线教育平台</h3>
-                  <p class="work-card-description">课程学习、直播授课、作业提交全流程设计</p>
+                  <h3 class="work-card-title">流固动力科技</h3>
+                  <p class="work-card-description">专注于为航空航天、核电、船舶等高端制造领域客户提供全链路工业仿真解决方案。</p>
                   <div class="work-card-meta">
                     <div class="work-card-tags">
-                      <span class="work-card-tag">教育</span>
-                      <span class="work-card-tag">SaaS</span>
+                      <span class="work-card-tag">校企合作</span>
+                      <span class="work-card-tag">竞赛</span>
                     </div>
                     <span class="work-card-view">查看详情 →</span>
                   </div>
                 </div>
               </div>
-              <div class="work-card" onclick="openModal('modal-web-3')">
-                <div class="watermark-wrap"><!-- 添加水印 -->
-                  <img class="work-card-image" src="./images/works/pc-project-management.jpeg" alt="项目管理工具">
-                </div>
-                <div class="work-card-body">
-                  <h3 class="work-card-title">项目管理工具</h3>
-                  <p class="work-card-description">任务管理、团队协作、进度跟踪工具</p>
-                  <div class="work-card-meta">
-                    <div class="work-card-tags">
-                      <span class="work-card-tag">协作</span>
-                      <span class="work-card-tag">效率</span>
-                    </div>
-                    <span class="work-card-view">查看详情 →</span>
-                  </div>
-                </div>
-              </div>
+              
+              
             </div>
           </div>
         </div>
@@ -150,94 +135,143 @@
         <!-- 二级分类：虚拟仿真 / 工业软件 -->
         <div class="subcategory-section">
           <div class="subcategory-header" onclick="toggleSubcategory(this)">
-            <h2 class="subcategory-title">🌐 虚拟仿真 / 工业软件</h2>
-            <span class="subcategory-count">3 个作品</span>
+            <h2 class="subcategory-title">✨ 虚拟仿真 / 工业软件</h2>
+            <span class="subcategory-count">6 个作品</span>
           </div>
           <div class="subcategory-content">
             <div class="works-grid works-grid-3">
-              <div class="work-card" onclick="openModal('modal-web-1')">
+              <div class="work-card" onclick="openModal('modal-VS-1')">
                 <div class="watermark-wrap"><!-- 添加水印 -->
-                  <img class="work-card-image " src="./images/works/pc-crm.jpeg" alt="企业CRM系统">
+                  <img class="work-card-image " src="./images/works/PC_whdx_fm.jpg" alt="武汉大学.海洋地理信息立体观测系统">
                 </div>
                 <div class="work-card-body">
-                  <h3 class="work-card-title">企业CRM系统</h3>
-                  <p class="work-card-description">客户关系管理系统，包含销售、营销、服务模块</p>
+                  <h3 class="work-card-title">武汉大学.海洋地理信息立体观测系统</h3>
+                  <p class="work-card-description">虚拟仿真、教学科研、量身定制</p>
                   <div class="work-card-meta">
                     <div class="work-card-tags">
                       <span class="work-card-tag">B2B</span>
-                      <span class="work-card-tag">Dashboard</span>
+                      <span class="work-card-tag">测绘</span>
                     </div>
                     <span class="work-card-view">查看详情 →</span>
                   </div>
                 </div>
               </div>
-              <div class="work-card" onclick="openModal('modal-web-2')">
+              <div class="work-card" onclick="openModal('modal-VS-2')">
                 <div class="watermark-wrap"><!-- 添加水印 -->
-                  <img class="work-card-image" src="./images/works/pc-education.jpeg" alt="在线教育平台">
+                  <img class="work-card-image" src="./images/works/PC_bddh_fm.jpg" alt="北斗导航与定位虚拟仿真 ">
                 </div>
                 <div class="work-card-body">
-                  <h3 class="work-card-title">在线教育平台</h3>
-                  <p class="work-card-description">课程学习、直播授课、作业提交全流程设计</p>
+                  <h3 class="work-card-title">北斗导航与定位虚拟仿真 </h3>
+                  <p class="work-card-description">虚拟仿真、科研教学</p>
                   <div class="work-card-meta">
                     <div class="work-card-tags">
                       <span class="work-card-tag">教育</span>
-                      <span class="work-card-tag">SaaS</span>
+                      <span class="work-card-tag">仿真</span>
                     </div>
                     <span class="work-card-view">查看详情 →</span>
                   </div>
                 </div>
               </div>
-              <div class="work-card" onclick="openModal('modal-web-3')">
+              <div class="work-card" onclick="openModal('modal-VS-3')">
                 <div class="watermark-wrap"><!-- 添加水印 -->
-                  <img class="work-card-image" src="./images/works/pc-project-management.jpeg" alt="项目管理工具">
+                  <img class="work-card-image" src="./images/works/PC_kzwcl_fm.jpg" alt="西南高速铁路轨道控制网测量虚拟仿真实验平台 ">
                 </div>
                 <div class="work-card-body">
-                  <h3 class="work-card-title">项目管理工具</h3>
-                  <p class="work-card-description">任务管理、团队协作、进度跟踪工具</p>
+                  <h3 class="work-card-title">西南高速铁路轨道控制网测量虚拟仿真实验平台 </h3>
+                  <p class="work-card-description">任务管理、团队协作、仿真教学</p>
                   <div class="work-card-meta">
                     <div class="work-card-tags">
-                      <span class="work-card-tag">协作</span>
-                      <span class="work-card-tag">效率</span>
+                      <span class="work-card-tag">科研教学</span>
+                      <span class="work-card-tag">仿真</span>
                     </div>
                     <span class="work-card-view">查看详情 →</span>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 二级分类：数据可视化 -->
-        <div class="subcategory-section">
-          <div class="subcategory-header" onclick="toggleSubcategory(this)">
-            <h2 class="subcategory-title">📊 数据可视化</h2>
-            <span class="subcategory-count">2 个作品</span>
-          </div>
-          <div class="subcategory-content">
-            <div class="works-grid works-grid-2">
-              <div class="work-card" onclick="openModal('modal-data-1')">
+              <div class="work-card" onclick="openModal('modal-VS-4')">
                 <div class="watermark-wrap"><!-- 添加水印 -->
-                  <img class="work-card-image" src="./images/works/pc-bi.jpeg" alt="BI分析平台">
+                  <img class="work-card-image" src="./images/works/PC_fdjscpt_fm.jpg" alt="发动机试车测试平台 ">
                 </div>
                 <div class="work-card-body">
-                  <h3 class="work-card-title">BI分析平台</h3>
-                  <p class="work-card-description">商业智能数据分析平台，支持多种图表类型</p>
+                  <h3 class="work-card-title">发动机试车测试平台 </h3>
+                  <p class="work-card-description">数据采集、实时监控、数据分析</p>
                   <div class="work-card-meta">
                     <div class="work-card-tags">
-                      <span class="work-card-tag">BI</span>
+                      <span class="work-card-tag">科研教学</span>
                       <span class="work-card-tag">数据分析</span>
                     </div>
                     <span class="work-card-view">查看详情 →</span>
                   </div>
                 </div>
               </div>
-              <div class="work-card" onclick="openModal('modal-data-2')">
+              <div class="work-card" onclick="openModal('modal-VS-5')">
                 <div class="watermark-wrap"><!-- 添加水印 -->
-                  <img class="work-card-image" src="./images/works/pc-monitoring.jpeg" alt="监控Dashboard">
+                  <img class="work-card-image" src="./images/works/PC_HMI_fm.jpg" alt="会议中控 HMI 界面设计 ">
                 </div>
                 <div class="work-card-body">
-                  <h3 class="work-card-title">监控Dashboard</h3>
-                  <p class="work-card-description">服务器监控、性能指标实时可视化</p>
+                  <h3 class="work-card-title">会议中控 HMI 界面设计 </h3>
+                  <p class="work-card-description">智能、中控、协同</p>
+                  <div class="work-card-meta">
+                    <div class="work-card-tags">
+                      <span class="work-card-tag">分布式</span>
+                      <span class="work-card-tag">控制</span>
+                    </div>
+                    <span class="work-card-view">查看详情 →</span>
+                  </div>
+                </div>
+              </div>
+              <div class="work-card" onclick="openModal('modal-VS-6')">
+                <div class="watermark-wrap"><!-- 添加水印 -->
+                  <img class="work-card-image" src="./images/works/PC_gtgh_fm.jpg" alt="西南国土规划">
+                </div>
+                <div class="work-card-body">
+                  <h3 class="work-card-title">村级国土空间规划虚拟仿真 </h3>
+                  <p class="work-card-description">空间可视化、国土规划、虚拟仿真</p>
+                  <div class="work-card-meta">
+                    <div class="work-card-tags">
+                      <span class="work-card-tag">GIS</span>
+                      <span class="work-card-tag">仿真</span>
+                    </div>
+                    <span class="work-card-view">查看详情 →</span>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- 二级分类：B端 -->
+        <div class="subcategory-section">
+          <div class="subcategory-header" onclick="toggleSubcategory(this)">
+            <h2 class="subcategory-title">📊 B端后台</h2>
+            <span class="subcategory-count">3 个作品</span>
+          </div>
+          <div class="subcategory-content">
+            <div class="works-grid works-grid-3">
+              <div class="work-card" onclick="openModal('modal-be-1')">
+                <div class="watermark-wrap"><!-- 添加水印 -->
+                  <img class="work-card-image" src="./images/works/B_luntai_fm.jpg" alt="矿卡">
+                </div>
+                <div class="work-card-body">
+                  <h3 class="work-card-title">矿卡车智能监测及管理系统</h3>
+                  <p class="work-card-description">实时监测露天矿卡车的运行状态、设备损耗周期，以及轮胎胎压等关键参数，实现全流程智能管理与预警。</p>
+                  <div class="work-card-meta">
+                    <div class="work-card-tags">
+                      <span class="work-card-tag">实时监控</span>
+                      <span class="work-card-tag">预警</span>
+                    </div>
+                    <span class="work-card-view">查看详情 →</span>
+                  </div>
+                </div>
+              </div>
+              <div class="work-card" onclick="openModal('modal-be-2')">
+                <div class="watermark-wrap"><!-- 添加水印 -->
+                  <img class="work-card-image" src="./images/works/PC_1Pizza_fm.jpg" alt="披萨">
+                </div>
+                <div class="work-card-body">
+                  <h3 class="work-card-title">C+1披萨</h3>
+                  <p class="work-card-description">服务、管理</p>
                   <div class="work-card-meta">
                     <div class="work-card-tags">
                       <span class="work-card-tag">监控</span>
@@ -247,110 +281,17 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- B2B分类 -->
-      <div class="category-content" id="category-B2B">
-        
-        <!-- 二级分类：Web应用 -->
-        <div class="subcategory-section">
-          <div class="subcategory-header" onclick="toggleSubcategory(this)">
-            <h2 class="subcategory-title">🌐 B端后台</h2>
-            <span class="subcategory-count">3 个作品</span>
-          </div>
-          <div class="subcategory-content">
-            <div class="works-grid works-grid-3">
-              <div class="work-card" onclick="openModal('modal-web-1')">
+              <div class="work-card" onclick="openModal('modal-be-3')">
                 <div class="watermark-wrap"><!-- 添加水印 -->
-                  <img class="work-card-image " src="./images/works/pc-crm.jpeg" alt="企业CRM系统">
+                  <img class="work-card-image" src="./images/works/PC_LINELINK_fm.jpg" alt="云中控">
                 </div>
                 <div class="work-card-body">
-                  <h3 class="work-card-title">企业CRM系统</h3>
-                  <p class="work-card-description">客户关系管理系统，包含销售、营销、服务模块</p>
+                  <h3 class="work-card-title">LINELINK 云控中</h3>
+                  <p class="work-card-description">服务、管理、控制</p>
                   <div class="work-card-meta">
                     <div class="work-card-tags">
-                      <span class="work-card-tag">B2B</span>
-                      <span class="work-card-tag">Dashboard</span>
-                    </div>
-                    <span class="work-card-view">查看详情 →</span>
-                  </div>
-                </div>
-              </div>
-              <div class="work-card" onclick="openModal('modal-web-2')">
-                <div class="watermark-wrap"><!-- 添加水印 -->
-                  <img class="work-card-image" src="./images/works/pc-education.jpeg" alt="在线教育平台">
-                </div>
-                <div class="work-card-body">
-                  <h3 class="work-card-title">在线教育平台</h3>
-                  <p class="work-card-description">课程学习、直播授课、作业提交全流程设计</p>
-                  <div class="work-card-meta">
-                    <div class="work-card-tags">
-                      <span class="work-card-tag">教育</span>
-                      <span class="work-card-tag">SaaS</span>
-                    </div>
-                    <span class="work-card-view">查看详情 →</span>
-                  </div>
-                </div>
-              </div>
-              <div class="work-card" onclick="openModal('modal-web-3')">
-                <div class="watermark-wrap"><!-- 添加水印 -->
-                  <img class="work-card-image" src="./images/works/pc-project-management.jpeg" alt="项目管理工具">
-                </div>
-                <div class="work-card-body">
-                  <h3 class="work-card-title">项目管理工具</h3>
-                  <p class="work-card-description">任务管理、团队协作、进度跟踪工具</p>
-                  <div class="work-card-meta">
-                    <div class="work-card-tags">
-                      <span class="work-card-tag">协作</span>
-                      <span class="work-card-tag">效率</span>
-                    </div>
-                    <span class="work-card-view">查看详情 →</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 二级分类：数据可视化 -->
-        <div class="subcategory-section">
-          <div class="subcategory-header" onclick="toggleSubcategory(this)">
-            <h2 class="subcategory-title">📊 数据可视化</h2>
-            <span class="subcategory-count">2 个作品</span>
-          </div>
-          <div class="subcategory-content">
-            <div class="works-grid works-grid-2">
-              <div class="work-card" onclick="openModal('modal-data-1')">
-                <div class="watermark-wrap"><!-- 添加水印 -->
-                  <img class="work-card-image" src="./images/works/pc-bi.jpeg" alt="BI分析平台">
-                </div>
-                <div class="work-card-body">
-                  <h3 class="work-card-title">BI分析平台</h3>
-                  <p class="work-card-description">商业智能数据分析平台，支持多种图表类型</p>
-                  <div class="work-card-meta">
-                    <div class="work-card-tags">
-                      <span class="work-card-tag">BI</span>
-                      <span class="work-card-tag">数据分析</span>
-                    </div>
-                    <span class="work-card-view">查看详情 →</span>
-                  </div>
-                </div>
-              </div>
-              <div class="work-card" onclick="openModal('modal-data-2')">
-                <div class="watermark-wrap"><!-- 添加水印 -->
-                  <img class="work-card-image" src="./images/works/pc-monitoring.jpeg" alt="监控Dashboard">
-                </div>
-                <div class="work-card-body">
-                  <h3 class="work-card-title">监控Dashboard</h3>
-                  <p class="work-card-description">服务器监控、性能指标实时可视化</p>
-                  <div class="work-card-meta">
-                    <div class="work-card-tags">
+                      <span class="work-card-tag">控制</span>
                       <span class="work-card-tag">监控</span>
-                      <span class="work-card-tag">实时</span>
                     </div>
                     <span class="work-card-view">查看详情 →</span>
                   </div>
@@ -365,21 +306,21 @@
       <!-- APP分类 -->
       <div class="category-content" id="category-app">
         
-        <!-- 二级分类：金融科技APP -->
+        <!-- 二级分类：购物 -->
         <div class="subcategory-section">
           <div class="subcategory-header" onclick="toggleSubcategory(this)">
-            <h2 class="subcategory-title">💳 金融科技APP</h2>
-            <span class="subcategory-count">3 个作品</span>
+            <h2 class="subcategory-title">💳 购物</h2>
+            <span class="subcategory-count">2 个作品</span>
           </div>
           <div class="subcategory-content">
-            <div class="works-grid works-grid-3">
-              <div class="work-card" onclick="openModal('modal-fintech-1')">
+            <div class="works-grid works-grid-2">
+              <div class="work-card" onclick="openModal('modal-ma-1')">
                 <div class="watermark-wrap"><!-- 添加水印 -->
-                  <img class="work-card-image" src="./images/works/app_quyou_fm.jpg" alt="数字钱包应用">
+                  <img class="work-card-image" src="./images/works/APP_suixinda_fm.jpg" alt="随心搭">
                 </div>
                 <div class="work-card-body">
-                  <h3 class="work-card-title">趣游</h3>
-                  <p class="work-card-description">移动支付与数字钱包全案设计，支持多币种管理、即时转账等功能</p>
+                  <h3 class="work-card-title">随心搭</h3>
+                  <p class="work-card-description">移动支付、随心购物、社区分享</p>
                   <div class="work-card-meta">
                     <div class="work-card-tags">
                       <span class="work-card-tag">iOS</span>
@@ -389,44 +330,29 @@
                   </div>
                 </div>
               </div>
-              <div class="work-card" onclick="openModal('modal-fintech-2')">
-                <div class="watermark-wrap"><!-- 添加水印 -->
-                  <img class="work-card-image" src="./images/works/app-investment.jpeg" alt="投资理财平台">
+              <div class="work-card" onclick="openModal('modal-ma-2')">
+                <div class="watermark-wrap">
+                  <img class="work-card-image" src="./images/works/APP_SINZ_fm.jpg" alt="SINZ">
                 </div>
                 <div class="work-card-body">
-                  <h3 class="work-card-title">投资理财平台</h3>
-                  <p class="work-card-description">基金、股票、理财产品一站式投资平台，数据可视化设计</p>
+                  <h3 class="work-card-title">SINZ购物</h3>
+                  <p class="work-card-description">多元、本地</p>
                   <div class="work-card-meta">
                     <div class="work-card-tags">
                       <span class="work-card-tag">iOS</span>
-                      <span class="work-card-tag">数据可视化</span>
+                      <span class="work-card-tag">一站式购物</span>
                     </div>
                     <span class="work-card-view">查看详情 →</span>
                   </div>
                 </div>
               </div>
-              <div class="work-card" onclick="openModal('modal-fintech-3')">
-                <div class="watermark-wrap"><!-- 添加水印 -->
-                  <img class="work-card-image" src="./images/works/app-insurance.jpeg" alt="保险服务APP">
-                </div>
-                <div class="work-card-body">
-                  <h3 class="work-card-title">保险服务APP</h3>
-                  <p class="work-card-description">在线投保、保单管理、理赔申请全流程设计</p>
-                  <div class="work-card-meta">
-                    <div class="work-card-tags">
-                      <span class="work-card-tag">Android</span>
-                      <span class="work-card-tag">保险</span>
-                    </div>
-                    <span class="work-card-view">查看详情 →</span>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
 
         <!-- 二级分类：运动健康APP -->
-        <div class="subcategory-section">
+        <!-- <div class="subcategory-section">
           <div class="subcategory-header" onclick="toggleSubcategory(this)">
             <h2 class="subcategory-title">🏃 运动健康APP</h2>
             <span class="subcategory-count">2 个作品</span>
@@ -434,7 +360,7 @@
           <div class="subcategory-content">
             <div class="works-grid works-grid-2">
               <div class="work-card" onclick="openModal('modal-fitness-1')">
-                <div class="watermark-wrap"><!-- 添加水印 -->
+                <div class="watermark-wrap">
                   <img class="work-card-image" src="./images/works/app-fitness.jpeg" alt="健身追踪应用">
                 </div>
                 <div class="work-card-body">
@@ -449,28 +375,13 @@
                   </div>
                 </div>
               </div>
-              <div class="work-card" onclick="openModal('modal-fitness-2')">
-                <div class="watermark-wrap"><!-- 添加水印 -->
-                  <img class="work-card-image" src="./images/works/app-meditation.jpeg" alt="冥想放松APP">
-                </div>
-                <div class="work-card-body">
-                  <h3 class="work-card-title">冥想放松APP</h3>
-                  <p class="work-card-description">冥想课程、呼吸训练、睡眠改善工具</p>
-                  <div class="work-card-meta">
-                    <div class="work-card-tags">
-                      <span class="work-card-tag">冥想</span>
-                      <span class="work-card-tag">心理健康</span>
-                    </div>
-                    <span class="work-card-view">查看详情 →</span>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- 二级分类：社交娱乐APP -->
-        <div class="subcategory-section">
+        <!-- <div class="subcategory-section">
           <div class="subcategory-header" onclick="toggleSubcategory(this)">
             <h2 class="subcategory-title">🎮 社交娱乐APP</h2>
             <span class="subcategory-count">2 个作品</span>
@@ -478,7 +389,7 @@
           <div class="subcategory-content">
             <div class="works-grid works-grid-2">
               <div class="work-card" onclick="openModal('modal-social-1')">
-                <div class="watermark-wrap"><!-- 添加水印 -->
+                <div class="watermark-wrap">
                   <img class="work-card-image" src="./images/works/app-social.jpeg" alt="兴趣社区APP">
                 </div>
                 <div class="work-card-body">
@@ -493,25 +404,10 @@
                   </div>
                 </div>
               </div>
-              <div class="work-card" onclick="openModal('modal-social-2')">
-                <div class="watermark-wrap"><!-- 添加水印 -->
-                  <img class="work-card-image" src="./images/works/app-video.jpeg" alt="短视频平台">
-                </div>
-                <div class="work-card-body">
-                  <h3 class="work-card-title">短视频平台</h3>
-                  <p class="work-card-description">短视频拍摄、编辑、分享一体化平台</p>
-                  <div class="work-card-meta">
-                    <div class="work-card-tags">
-                      <span class="work-card-tag">短视频</span>
-                      <span class="work-card-tag">娱乐</span>
-                    </div>
-                    <span class="work-card-view">查看详情 →</span>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
-        </div>
+        </div> -->
 
       </div>
 
@@ -521,14 +417,14 @@
         <!-- 二级分类：微信小程序 -->
         <div class="subcategory-section">
           <div class="subcategory-header" onclick="toggleSubcategory(this)">
-            <h2 class="subcategory-title">💬 微信小程序</h2>
-            <span class="subcategory-count">3 个作品</span>
+            <h2 class="subcategory-title">💬 小程序</h2>
+            <span class="subcategory-count">4 个作品</span>
           </div>
           <div class="subcategory-content">
             <div class="works-grid works-grid-3">
               <div class="work-card" onclick="openModal('modal-mp-1')">
                 <div class="watermark-wrap"><!-- 添加水印 -->
-                  <img class="work-card-image" src="./images/works/app_quyou_fm.jpg" alt="本地生活服务">
+                  <img class="work-card-image" src="./images/works/XCX_quyou_fm.jpg" alt="趣游小程序">
                 </div>
                 <div class="work-card-body">
                   <h3 class="work-card-title">趣游</h3>
@@ -544,11 +440,11 @@
               </div>
               <div class="work-card" onclick="openModal('modal-mp-2')">
                 <div class="watermark-wrap"><!-- 添加水印 -->
-                  <img class="work-card-image" src="./images/works/mini-business-card.jpeg" alt="企业名片小程序">
+                  <img class="work-card-image" src="./images/works/XCX_saye_fm.jpg" alt="撒野小程序">
                 </div>
                 <div class="work-card-body">
-                  <h3 class="work-card-title">企业名片小程序</h3>
-                  <p class="work-card-description">企业展示、产品介绍、在线咨询</p>
+                  <h3 class="work-card-title">撒野</h3>
+                  <p class="work-card-description">撒野</p>
                   <div class="work-card-meta">
                     <div class="work-card-tags">
                       <span class="work-card-tag">企业</span>
@@ -560,15 +456,31 @@
               </div>
               <div class="work-card" onclick="openModal('modal-mp-3')">
                 <div class="watermark-wrap"><!-- 添加水印 -->
-                  <img class="work-card-image" src="./images/works/mini-hospital.jpeg" alt="预约挂号小程序">
+                  <img class="work-card-image" src="./images/works/XCX_dzzp_fm.jpg" alt="电子桌牌">
                 </div>
                 <div class="work-card-body">
-                  <h3 class="work-card-title">预约挂号小程序</h3>
-                  <p class="work-card-description">医院预约挂号、医生排班、在线问诊</p>
+                  <h3 class="work-card-title">电子桌牌</h3>
+                  <p class="work-card-description">无纸化、绿色、智慧、高效</p>
                   <div class="work-card-meta">
                     <div class="work-card-tags">
-                      <span class="work-card-tag">医疗</span>
-                      <span class="work-card-tag">预约</span>
+                      <span class="work-card-tag">会议</span>
+                      <span class="work-card-tag">智慧</span>
+                    </div>
+                    <span class="work-card-view">查看详情 →</span>
+                  </div>
+                </div>
+              </div>
+              <div class="work-card" onclick="openModal('modal-mp-4')">
+                <div class="watermark-wrap"><!-- 添加水印 -->
+                  <img class="work-card-image" src="./images/works/XCX_hsl-shd_fm.jpg" alt="海食链">
+                </div>
+                <div class="work-card-body">
+                  <h3 class="work-card-title">海食链</h3>
+                  <p class="work-card-description">溯源、安全、规范</p>
+                  <div class="work-card-meta">
+                    <div class="work-card-tags">
+                      <span class="work-card-tag">溯源</span>
+                      <span class="work-card-tag">安全</span>
                     </div>
                     <span class="work-card-view">查看详情 →</span>
                   </div>
@@ -579,7 +491,7 @@
         </div>
 
         <!-- 二级分类：支付宝小程序 -->
-        <div class="subcategory-section">
+        <!-- <div class="subcategory-section">
           <div class="subcategory-header" onclick="toggleSubcategory(this)">
             <h2 class="subcategory-title">💰 支付宝小程序</h2>
             <span class="subcategory-count">1 个作品</span>
@@ -587,7 +499,7 @@
           <div class="subcategory-content">
             <div class="works-grid works-grid-2">
               <div class="work-card" onclick="openModal('modal-ali-1')">
-                <div class="watermark-wrap"><!-- 添加水印 -->
+                <div class="watermark-wrap">
                   <img class="work-card-image" src="./images/works/mini-membership.jpeg" alt="会员管理小程序">
                 </div>
                 <div class="work-card-body">
@@ -604,9 +516,173 @@
               </div>
             </div>
           </div>
+        </div> -->
+
+      </div>
+
+      <!-- 平面设计分类 -->
+      <div class="category-content" id="category-graphic">
+        
+        <!-- 二级分类：品牌设计 -->
+        <div class="subcategory-section">
+          <div class="subcategory-header" onclick="toggleSubcategory(this)">
+            <h2 class="subcategory-title">🎨 品牌视觉物料设计</h2>
+            <span class="subcategory-count">3 个作品</span>
+          </div>
+          <div class="subcategory-content">
+            <div class="works-grid works-grid-3">
+              <div class="work-card" onclick="openModal('modal-brand-1')">
+                <div class="watermark-wrap"><!-- 添加水印 -->
+                  <img class="work-card-image" src="./images/works/PM_hc_fm.jpg" alt="流固动力">
+                </div>
+                <div class="work-card-body">
+                  <h3 class="work-card-title">流固动力</h3>
+                  <p class="work-card-description">流固动力企业宣传画册</p>
+                  <div class="work-card-meta">
+                    <div class="work-card-tags">
+                      <span class="work-card-tag">动力</span>
+                      <span class="work-card-tag">宣传</span>
+                    </div>
+                    <span class="work-card-view">查看详情 →</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="work-card" onclick="openModal('modal-hb-1')">
+                <div class="watermark-wrap"><!-- 添加水印 -->
+                  <img class="work-card-image" src="./images/works/PM_hzzn_hb_fm.jpg" alt="鸿哲智能节日系列公众号海报">
+                </div>
+                <div class="work-card-body">
+                  <h3 class="work-card-title">鸿哲智能节日系列公众号海报</h3>
+                  <p class="work-card-description">节日 / 节气系列宣传海报</p>
+                  <div class="work-card-meta">
+                    <div class="work-card-tags">
+                      <span class="work-card-tag">节日</span>
+                      <span class="work-card-tag">公众号</span>
+                    </div>
+                    <span class="work-card-view">查看详情 →</span>
+                  </div>
+                </div>
+              </div>
+              <div class="work-card" onclick="openModal('modal-hb-2')">
+                <div class="watermark-wrap"><!-- 添加水印 -->
+                  <img class="work-card-image" src="./images/works/PM_lgdl_hb_fm.jpg" alt="流固动力品牌视觉物料合集">
+                </div>
+                <div class="work-card-body">
+                  <h3 class="work-card-title">流固动力品牌视觉物料合集</h3>
+                  <p class="work-card-description">品牌 / 视觉</p>
+                  <div class="work-card-meta">
+                    <div class="work-card-tags">
+                      <span class="work-card-tag">节日</span>
+                      <span class="work-card-tag">宣传</span>
+                    </div>
+                    <span class="work-card-view">查看详情 →</span>
+                  </div>
+                </div>
+              </div>
+
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- 二级分类：海报设计 -->
+        <!-- <div class="subcategory-section">
+          <div class="subcategory-header" onclick="toggleSubcategory(this)">
+            <h2 class="subcategory-title">📄 海报设计</h2>
+            <span class="subcategory-count">2 个作品</span>
+          </div>
+          <div class="subcategory-content">
+            <div class="works-grid works-grid-3">
+              
+              <div class="work-card" onclick="openModal('modal-jr-2')">
+                <div class="watermark-wrap">
+                  <img class="work-card-image" src="./images/works/children-day.jpg" alt="六一">
+                </div>
+                <div class="work-card-body">
+                  <h3 class="work-card-title">六一</h3>
+                  <p class="work-card-description">鸿哲智能六一宣传海报</p>
+                  <div class="work-card-meta">
+                    <div class="work-card-tags">
+                      <span class="work-card-tag">节日</span>
+                      <span class="work-card-tag">端午</span>
+                    </div>
+                    <span class="work-card-view">查看详情 →</span>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div> -->
+
+      </div>
+
+      <!-- 数据可视化 -->
+      <div class="category-content" id="category-Data Visualization">
+        
+        <!-- 二级分类：数字孪生 -->
+        <div class="subcategory-section">
+          <div class="subcategory-header" onclick="toggleSubcategory(this)">
+            <h2 class="subcategory-title">🤖 数字孪生 / 可视化</h2>
+            <span class="subcategory-count">3 个作品</span>
+          </div>
+          <div class="subcategory-content">
+            <div class="works-grid works-grid-3">
+              <div class="work-card" onclick="openModal('modal-DVS-1')">
+                <div class="watermark-wrap"><!-- 添加水印 -->
+                  <img class="work-card-image" src="./images/works/DVS_LTK_fm.jpg" alt="露天矿数字矿山系统">
+                </div>
+                <div class="work-card-body">
+                  <h3 class="work-card-title">露天矿数字矿山系统</h3>
+                  <p class="work-card-description">矿山生产全流程的数字化管控</p>
+                  <div class="work-card-meta">
+                    <div class="work-card-tags">
+                      <span class="work-card-tag">GIS</span>
+                      <span class="work-card-tag">实时监控</span>
+                    </div>
+                    <span class="work-card-view">查看详情 →</span>
+                  </div>
+                </div>
+              </div>
+              <div class="work-card" onclick="openModal('modal-DVS-2')">
+                <div class="watermark-wrap"><!-- 添加水印 -->
+                  <img class="work-card-image" src="./images/works/DVS_ZKFBS_fm.jpg" alt="中控分布式可视化大屏">
+                </div>
+                <div class="work-card-body">
+                  <h3 class="work-card-title">中控分布式可视化大屏</h3>
+                  <p class="work-card-description">集中管控、可视化调度、状态监控</p>
+                  <div class="work-card-meta">
+                    <div class="work-card-tags">
+                      <span class="work-card-tag">智能管控</span>
+                      <span class="work-card-tag">分布式</span>
+                    </div>
+                    <span class="work-card-view">查看详情 →</span>
+                  </div>
+                </div>
+              </div>
+              <div class="work-card" onclick="openModal('modal-DVS-3')">
+                <div class="watermark-wrap"><!-- 添加水印 -->
+                  <img class="work-card-image" src="./images/works/DVS_SMY_fm.jpg" alt="神木引黄支线综智能监控平台">
+                </div>
+                <div class="work-card-body">
+                  <h3 class="work-card-title">神木引黄支线综智能监控平台</h3>
+                  <p class="work-card-description">可视化、状态监控</p>
+                  <div class="work-card-meta">
+                    <div class="work-card-tags">
+                      <span class="work-card-tag">安全</span>
+                      <span class="work-card-tag">分析</span>
+                    </div>
+                    <span class="work-card-view">查看详情 →</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
+      
 
       <!-- 电商分类 -->
       <div class="category-content" id="category-ecommerce">
@@ -615,17 +691,17 @@
         <div class="subcategory-section">
           <div class="subcategory-header" onclick="toggleSubcategory(this)">
             <h2 class="subcategory-title">🛒 B2C电商</h2>
-            <span class="subcategory-count">2 个作品</span>
+            <span class="subcategory-count">3 个作品</span>
           </div>
           <div class="subcategory-content">
-            <div class="works-grid works-grid-2">
+            <div class="works-grid works-grid-3">
               <div class="work-card" onclick="openModal('modal-ec-b2c-1')">
-                <div class="watermark-wrap"><!-- 添加水印 -->
-                  <img class="work-card-image" src="./images/works/ecom-fashion.jpeg" alt="时尚服饰商城">
+                <div class="watermark-wrap">
+                  <img class="work-card-image" src="./images/works/PM_hezn_zt_fm.jpg" alt="主图">
                 </div>
                 <div class="work-card-body">
-                  <h3 class="work-card-title">时尚服饰商城</h3>
-                  <p class="work-card-description">服装配饰电商网站，包含商品浏览、购物车、支付流程</p>
+                  <h3 class="work-card-title">鸿哲智能电商主图设计</h3>
+                  <p class="work-card-description">专业音响设备代理商与音视频系统方案解决商</p>
                   <div class="work-card-meta">
                     <div class="work-card-tags">
                       <span class="work-card-tag">时尚</span>
@@ -636,27 +712,44 @@
                 </div>
               </div>
               <div class="work-card" onclick="openModal('modal-ec-b2c-2')">
-                <div class="watermark-wrap"><!-- 添加水印 -->
-                  <img class="work-card-image" src="./images/works/ecom-fresh.jpeg" alt="生鲜电商平台">
+                <div class="watermark-wrap">
+                  <img class="work-card-image" src="./images/works/PM_hzzn_dpzx_fm.jpg" alt="鸿哲智能店铺装修">
                 </div>
                 <div class="work-card-body">
-                  <h3 class="work-card-title">生鲜电商平台</h3>
-                  <p class="work-card-description">生鲜食品在线购买，支持配送与自提</p>
+                  <h3 class="work-card-title">鸿哲智能店铺装修</h3>
+                  <p class="work-card-description">专业音响设备代理商与音视频系统方案解决商</p>
                   <div class="work-card-meta">
                     <div class="work-card-tags">
-                      <span class="work-card-tag">生鲜</span>
-                      <span class="work-card-tag">配送</span>
+                      <span class="work-card-tag">音响</span>
+                      <span class="work-card-tag">设备</span>
                     </div>
                     <span class="work-card-view">查看详情 →</span>
                   </div>
                 </div>
               </div>
+              <div class="work-card" onclick="openModal('modal-ec-b2c-3')">
+                <div class="watermark-wrap">
+                  <img class="work-card-image" src="./images/works/PM_hzzn_xqy_fm.jpg" alt="S1 Pro+_详情页">
+                </div>
+                <div class="work-card-body">
+                  <h3 class="work-card-title">S1 Pro+_详情页</h3>
+                  <p class="work-card-description">是便携扩声的 “全能小钢炮”</p>
+                  <div class="work-card-meta">
+                    <div class="work-card-tags">
+                      <span class="work-card-tag">音响</span>
+                      <span class="work-card-tag">设备</span>
+                    </div>
+                    <span class="work-card-view">查看详情 →</span>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
 
         <!-- 二级分类：B2B电商 -->
-        <div class="subcategory-section">
+        <!-- <div class="subcategory-section">
           <div class="subcategory-header" onclick="toggleSubcategory(this)">
             <h2 class="subcategory-title">🏢 B2B电商</h2>
             <span class="subcategory-count">1 个作品</span>
@@ -664,7 +757,7 @@
           <div class="subcategory-content">
             <div class="works-grid works-grid-2">
               <div class="work-card" onclick="openModal('modal-ec-b2b-1')">
-                <div class="watermark-wrap"><!-- 添加水印 -->
+                <div class="watermark-wrap">
                   <img class="work-card-image" src="./images/works/ecom-industrial.jpeg" alt="工业采购平台">
                 </div>
                 <div class="work-card-body">
@@ -681,100 +774,7 @@
               </div>
             </div>
           </div>
-        </div>
-
-      </div>
-
-      <!-- 平面设计分类 -->
-      <div class="category-content" id="category-graphic">
-        
-        <!-- 二级分类：品牌设计 -->
-        <div class="subcategory-section">
-          <div class="subcategory-header" onclick="toggleSubcategory(this)">
-            <h2 class="subcategory-title">🎨 品牌设计</h2>
-            <span class="subcategory-count">2 个作品</span>
-          </div>
-          <div class="subcategory-content">
-            <div class="works-grid works-grid-2">
-              <div class="work-card" onclick="openModal('modal-brand-1')">
-                <div class="watermark-wrap"><!-- 添加水印 -->
-                  <img class="work-card-image" src="./images/works/graphic-tech-vi.jpeg" alt="科技公司品牌VI">
-                </div>
-                <div class="work-card-body">
-                  <h3 class="work-card-title">科技公司品牌VI</h3>
-                  <p class="work-card-description">包括Logo、名片、宣传册、PPT模板等全套VI设计</p>
-                  <div class="work-card-meta">
-                    <div class="work-card-tags">
-                      <span class="work-card-tag">VI</span>
-                      <span class="work-card-tag">品牌</span>
-                    </div>
-                    <span class="work-card-view">查看详情 →</span>
-                  </div>
-                </div>
-              </div>
-              <div class="work-card" onclick="openModal('modal-brand-2')">
-                <div class="watermark-wrap"><!-- 添加水印 -->
-                  <img class="work-card-image" src="./images/works/graphic-restaurant.jpeg" alt="餐饮品牌设计">
-                </div>
-                <div class="work-card-body">
-                  <h3 class="work-card-title">餐饮品牌设计</h3>
-                  <p class="work-card-description">餐饮品牌视觉系统，包括Logo、菜单、包装设计</p>
-                  <div class="work-card-meta">
-                    <div class="work-card-tags">
-                      <span class="work-card-tag">餐饮</span>
-                      <span class="work-card-tag">包装</span>
-                    </div>
-                    <span class="work-card-view">查看详情 →</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 二级分类：海报设计 -->
-        <div class="subcategory-section">
-          <div class="subcategory-header" onclick="toggleSubcategory(this)">
-            <h2 class="subcategory-title">📄 海报设计</h2>
-            <span class="subcategory-count">2 个作品</span>
-          </div>
-          <div class="subcategory-content">
-            <div class="works-grid works-grid-2">
-              <div class="work-card" onclick="openModal('modal-poster-1')">
-                <div class="watermark-wrap"><!-- 添加水印 -->
-                  <img class="work-card-image" src="./images/works/graphic-event.jpeg" alt="活动宣传海报">
-                </div>
-                <div class="work-card-body">
-                  <h3 class="work-card-title">活动宣传海报</h3>
-                  <p class="work-card-description">科技峰会活动宣传海报系列设计</p>
-                  <div class="work-card-meta">
-                    <div class="work-card-tags">
-                      <span class="work-card-tag">活动</span>
-                      <span class="work-card-tag">宣传</span>
-                    </div>
-                    <span class="work-card-view">查看详情 →</span>
-                  </div>
-                </div>
-              </div>
-              <div class="work-card" onclick="openModal('modal-poster-2')">
-                <div class="watermark-wrap"><!-- 添加水印 -->
-                  <img class="work-card-image" src="./images/works/graphic-promo.jpeg" alt="节日促销海报">
-                </div>
-                <div class="work-card-body">
-                  <h3 class="work-card-title">节日促销海报</h3>
-                  <p class="work-card-description">电商节日促销活动海报设计</p>
-                  <div class="work-card-meta">
-                    <div class="work-card-tags">
-                      <span class="work-card-tag">促销</span>
-                      <span class="work-card-tag">节日</span>
-                    </div>
-                    <span class="work-card-view">查看详情 →</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        </div> -->
 
       </div>
 
@@ -785,37 +785,69 @@
         <div class="subcategory-section">
           <div class="subcategory-header" onclick="toggleSubcategory(this)">
             <h2 class="subcategory-title">🎭 3D产品建模</h2>
-            <span class="subcategory-count">2 个作品</span>
+            <span class="subcategory-count">4 个作品</span>
           </div>
           <div class="subcategory-content">
-            <div class="works-grid works-grid-2">
-              <div class="work-card" onclick="openModal('modal-model-1')">
+            <div class="works-grid works-grid-3">
+              <div class="work-card" onclick="openModal('modal-3d-1')">
                 <div class="watermark-wrap"><!-- 添加水印 -->
-                  <img class="work-card-image" src="./images/works/model-electronics.jpeg" alt="电子产品建模">
+                  <img class="work-card-image" src="./images/works/3D_1.jpg" alt="高阻值电阻箱">
                 </div>
                 <div class="work-card-body">
-                  <h3 class="work-card-title">电子产品建模</h3>
-                  <p class="work-card-description">智能手机、耳机等电子产品3D建模与渲染</p>
+                  <h3 class="work-card-title">高阻值电阻箱</h3>
+                  <p class="work-card-description">高精度、可调节的高值电阻标准件</p>
                   <div class="work-card-meta">
                     <div class="work-card-tags">
-                      <span class="work-card-tag">产品</span>
-                      <span class="work-card-tag">渲染</span>
+                      <span class="work-card-tag">稳定性</span>
+                      <span class="work-card-tag">设备</span>
                     </div>
                     <span class="work-card-view">查看详情 →</span>
                   </div>
                 </div>
               </div>
-              <div class="work-card" onclick="openModal('modal-model-2')">
+              <div class="work-card" onclick="openModal('modal-3d-2')">
                 <div class="watermark-wrap"><!-- 添加水印 -->
-                  <img class="work-card-image" src="./images/works/model-furniture.jpeg" alt="家具产品设计">
+                  <img class="work-card-image" src="./images/works/3D_2.jpg" alt="精密电阻箱">
                 </div>
                 <div class="work-card-body">
-                  <h3 class="work-card-title">家具产品设计</h3>
-                  <p class="work-card-description">现代风格家具3D建模与材质设计</p>
+                  <h3 class="work-card-title">精密电阻箱</h3>
+                  <p class="work-card-description">通用型高精度可变电阻标准器</p>
                   <div class="work-card-meta">
                     <div class="work-card-tags">
-                      <span class="work-card-tag">家具</span>
+                      <span class="work-card-tag">电子实验</span>
+                      <span class="work-card-tag">仪器</span>
+                    </div>
+                    <span class="work-card-view">查看详情 →</span>
+                  </div>
+                </div>
+              </div>
+              <div class="work-card" onclick="openModal('modal-3d-3')">
+                <div class="watermark-wrap"><!-- 添加水印 -->
+                  <img class="work-card-image" src="./images/works/3D_3.jpg" alt="多功能校准源">
+                </div>
+                <div class="work-card-body">
+                  <h3 class="work-card-title">多功能校准源</h3>
+                  <p class="work-card-description">高精度的信号发生器</p>
+                  <div class="work-card-meta">
+                    <div class="work-card-tags">
+                      <span class="work-card-tag">计量</span>
                       <span class="work-card-tag">材质</span>
+                    </div>
+                    <span class="work-card-view">查看详情 →</span>
+                  </div>
+                </div>
+              </div>
+              <div class="work-card" onclick="openModal('modal-3d-4')">
+                <div class="watermark-wrap"><!-- 添加水印 -->
+                  <img class="work-card-image" src="./images/works/3D_4.jpg" alt="示波器">
+                </div>
+                <div class="work-card-body">
+                  <h3 class="work-card-title">示波器</h3>
+                  <p class="work-card-description">信号波形观测仪器</p>
+                  <div class="work-card-meta">
+                    <div class="work-card-tags">
+                      <span class="work-card-tag">电子研发</span>
+                      <span class="work-card-tag">设备</span>
                     </div>
                     <span class="work-card-view">查看详情 →</span>
                   </div>
@@ -826,7 +858,7 @@
         </div>
 
         <!-- 二级分类：场景建模 -->
-        <div class="subcategory-section">
+        <!-- <div class="subcategory-section">
           <div class="subcategory-header" onclick="toggleSubcategory(this)">
             <h2 class="subcategory-title">🏠 场景建模</h2>
             <span class="subcategory-count">1 个作品</span>
@@ -834,7 +866,7 @@
           <div class="subcategory-content">
             <div class="works-grid works-grid-2">
               <div class="work-card" onclick="openModal('modal-scene-1')">
-                <div class="watermark-wrap"><!-- 添加水印 -->
+                <div class="watermark-wrap">
                   <img class="work-card-image" src="./images/works/model-interior.jpeg" alt="室内空间建模">
                 </div>
                 <div class="work-card-body">
@@ -851,84 +883,7 @@
               </div>
             </div>
           </div>
-        </div>
-
-      </div>
-
-      <!-- AIGC分类 -->
-      <div class="category-content" id="category-aigc">
-        
-        <!-- 二级分类：AI绘画 -->
-        <div class="subcategory-section">
-          <div class="subcategory-header" onclick="toggleSubcategory(this)">
-            <h2 class="subcategory-title">🤖 AI绘画</h2>
-            <span class="subcategory-count">2 个作品</span>
-          </div>
-          <div class="subcategory-content">
-            <div class="works-grid works-grid-2">
-              <div class="work-card" onclick="openModal('modal-aigc-1')">
-                <div class="watermark-wrap"><!-- 添加水印 -->
-                  <img class="work-card-image" src="./images/works/aigc-illustration.jpeg" alt="AI插画创作">
-                </div>
-                <div class="work-card-body">
-                  <h3 class="work-card-title">AI插画创作</h3>
-                  <p class="work-card-description">使用Midjourney、Stable Diffusion创作的商业插画</p>
-                  <div class="work-card-meta">
-                    <div class="work-card-tags">
-                      <span class="work-card-tag">插画</span>
-                      <span class="work-card-tag">商业</span>
-                    </div>
-                    <span class="work-card-view">查看详情 →</span>
-                  </div>
-                </div>
-              </div>
-              <div class="work-card" onclick="openModal('modal-aigc-2')">
-                <div class="watermark-wrap"><!-- 添加水印 -->
-                  <img class="work-card-image" src="./images/works/aigc-character.jpeg" alt="AI角色设计">
-                </div>
-                <div class="work-card-body">
-                  <h3 class="work-card-title">AI角色设计</h3>
-                  <p class="work-card-description">游戏角色、虚拟形象的AI辅助设计</p>
-                  <div class="work-card-meta">
-                    <div class="work-card-tags">
-                      <span class="work-card-tag">角色</span>
-                      <span class="work-card-tag">游戏</span>
-                    </div>
-                    <span class="work-card-view">查看详情 →</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 二级分类：AI辅助设计 -->
-        <div class="subcategory-section">
-          <div class="subcategory-header" onclick="toggleSubcategory(this)">
-            <h2 class="subcategory-title">✨ AI辅助设计</h2>
-            <span class="subcategory-count">1 个作品</span>
-          </div>
-          <div class="subcategory-content">
-            <div class="works-grid works-grid-2">
-              <div class="work-card" onclick="openModal('modal-aidesign-1')">
-                <div class="watermark-wrap"><!-- 添加水印 -->
-                  <img class="work-card-image" src="./images/works/aigc-workflow.jpeg" alt="AI设计工作流">
-                </div>
-                <div class="work-card-body">
-                  <h3 class="work-card-title">AI设计工作流</h3>
-                  <p class="work-card-description">集成AI工具的设计流程，提升设计效率</p>
-                  <div class="work-card-meta">
-                    <div class="work-card-tags">
-                      <span class="work-card-tag">工作流</span>
-                      <span class="work-card-tag">效率</span>
-                    </div>
-                    <span class="work-card-view">查看详情 →</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        </div> -->
 
       </div>
 
@@ -936,7 +891,7 @@
   </section>
 
   <!-- 设计理念 -->
-  <section class="section">
+  <!-- <section class="section">
     <div class="container">
       <div class="section-header">
         <h2 class="section-title">设计理念</h2>
@@ -966,7 +921,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- 页脚 -->
   <footer class="footer">
@@ -1060,184 +1015,165 @@
       
       // 示例内容（实际应该从数据库或配置文件加载）
       const projectData = {
-        // PC分类
+        // PC
         'modal-web-1': {
-          title: '企业CRM系统',
-          image: 'url(./images/works/featured-fintech.jpeg)',
-          description: '客户关系管理系统，包含销售、营销、服务模块。帮助企业高效管理客户关系，提升销售效率和客户满意度。',
-          tags: ['B2B', 'Dashboard', '企业级'],
+          title: '南方测绘教育',
+          image: 'url(./images/works/PC_South.jpg)',
+          description: '南方测绘教育研究院是南方旗下一款集测绘虚拟仿真教学、高校测绘职业技能竞赛以及校企合作的平台。旨在帮助高校解决“三高三难”等问题，即：高投入、高损耗、高风险、难实施、难观摩、难再现。',
+          tags: ['测绘', '服务', '竞赛'],
           stats: { users: '50K+', satisfaction: '93%', conversion: '+30%' },
           tools: 'Figma, Sketch, InVision',
           role: 'UI/UX设计师',
           duration: '2023年5月 - 2023年9月'
         },
         'modal-web-2': {
-          title: '在线教育平台',
-          image: 'url(./images/works/pc-education.jpeg)',
-          description: '课程学习、直播授课、作业提交全流程设计。为学生和教师提供便捷的在线教学体验，支持多种互动方式。',
-          tags: ['教育', 'SaaS', 'Web应用'],
+          title: '流固动力科技',
+          image: 'url(./images/works/PC_lgdl.jpg)',
+          description: '西安流固以 “高精度、高适配、高效率” 为核心技术理念，聚焦复杂装备研发中的流 - 固 - 热 - 声多物理场耦合仿真难题，构建了 “平台 + 方案 + 服务” 的完整业务体系。',
+          tags: ['服务', '定制化', '培训'],
+          stats: { users: '50K+', satisfaction: '93%', conversion: '+30%' },
+          tools: 'Figma, Sketch, InVision',
+          role: 'UI/UX设计师',
+          duration: '2023年5月 - 2023年9月'
+        },
+
+
+        'modal-VS-1': {
+          title: '武汉大学 海洋地理信息立体观测系统',
+          image: 'url(./images/works/PC_whdx.jpg)',
+          description: '为武汉大学海洋测绘专业提供模拟真实海洋测绘的虚拟仿真教学平台，替代高成本、高风险的实地实验。',
+          tags: ['测绘', '仿真', '科研教学'],
           stats: { users: '100K+', satisfaction: '96%', conversion: '+40%' },
           tools: 'Figma, After Effects, Principle',
           role: 'UI/UX设计师',
           duration: '2023年2月 - 2023年6月'
         },
-        'modal-web-3': {
-          title: '项目管理工具',
-          image: 'url(./images/works/pc-project-management.jpeg)',
-          description: '任务管理、团队协作、进度跟踪工具。帮助团队高效协作，清晰掌握项目进度，提升工作效率。',
-          tags: ['协作', '效率', 'SaaS'],
-          stats: { users: '80K+', satisfaction: '94%', conversion: '+35%' },
-          tools: 'Figma, Sketch, Framer',
+        'modal-VS-2': {
+          title: '北斗导航与定位虚拟仿真',
+          image: 'url(./images/works/PC_bddh.jpg)',
+          description: '本项目为高校教学场景打造北斗导航与定位虚拟仿真系统界面，以三维地球场景为核心，集成卫星轨道可视化、参数配置、实验数据监控等模块，让用户通过交互界面直观理解导航定位原理，完成虚拟实验操作，解决传统教学模式的痛点，实现教学场景的数字化与沉浸式升级。',
+          tags: ['测绘', '仿真', '科研教学'],
+          stats: { users: '100K+', satisfaction: '96%', conversion: '+40%' },
+          tools: 'Figma, After Effects, Principle',
           role: 'UI/UX设计师',
-          duration: '2022年10月 - 2023年2月'
+          duration: '2023年2月 - 2023年6月'
         },
-        'modal-data-1': {
-          title: 'BI分析平台',
-          image: 'url(./images/works/pc-bi.jpeg)',
-          description: '商业智能数据分析平台，支持多种图表类型。帮助企业快速洞察数据，做出数据驱动的决策。',
-          tags: ['BI', '数据分析', 'Dashboard'],
+        'modal-VS-3': {
+          title: '西南高速铁路轨道控制网测量虚拟仿真实验平台 ',
+          image: 'url(./images/works/PC_kzwcl.jpg)',
+          description: '本项目以三维地形场景为核心，集成勘测选点、埋石测量、基线计算等全流程模块，让用户通过交互界面完成虚拟实验操作，解决传统教学的痛点，实现轨道测量教学的数字化与沉浸式升级。',
+          tags: ['测绘', '仿真', '科研教学'],
+          stats: { users: '100K+', satisfaction: '96%', conversion: '+40%' },
+          tools: 'Figma, After Effects, Principle',
+          role: 'UI/UX设计师',
+          duration: '2023年2月 - 2023年6月'
+        },
+        'modal-VS-4': {
+          title: '发动机试车测试平台 ',
+          image: 'url(./images/works/PC_fdjscpt.jpg)',
+          description: '本项目为实验室涡轮发动机试车实验打造的发动机试车测试平台，解决传统试车过程中，数据采集分散、监控不直观、调试效率低、人工记录误差大的痛点。',
+          tags: ['数据采集', '数据实验', '科研教学'],
+          stats: { users: '100K+', satisfaction: '96%', conversion: '+40%' },
+          tools: 'Figma, After Effects, Principle',
+          role: 'UI/UX设计师',
+          duration: '2023年2月 - 2023年6月'
+        },
+        'modal-VS-5': {
+          title: '会议中控 HMI 界面设计 ',
+          image: 'url(./images/works/PC_HMI.jpg)',
+          description: '实现会议设备的集中化、可视化、高效化管理，解决多设备协同控制的痛点，提升会议场景的智能化体验。',
+          tags: ['可视化', '协同', '智能'],
+          stats: { users: '100K+', satisfaction: '96%', conversion: '+40%' },
+          tools: 'Figma, After Effects, Principle',
+          role: 'UI/UX设计师',
+          duration: '2023年2月 - 2023年6月'
+        },
+        'modal-VS-6': {
+          title: '村级国土空间规划虚拟仿真 ',
+          image: 'url(./images/works/PC_gtgh.jpg)',
+          description: '村级国土空间规划虚拟仿真系统，三维 GIS 可视化教学平台，支持村庄规划全流程可视化操作。',
+          tags: ['GIS可视化', '国土规划'],
+          stats: { users: '100K+', satisfaction: '96%', conversion: '+40%' },
+          tools: 'Figma, After Effects, Principle',
+          role: 'UI/UX设计师',
+          duration: '2023年2月 - 2023年6月'
+        },
+        'modal-VS-7': {
+          title: '会议中控 HMI 界面设计 ',
+          image: 'url(./images/works/PC_HMI.jpg)',
+          description: '实现会议设备的集中化、可视化、高效化管理，解决多设备协同控制的痛点，提升会议场景的智能化体验。',
+          tags: ['可视化', '协同', '智能'],
+          stats: { users: '100K+', satisfaction: '96%', conversion: '+40%' },
+          tools: 'Figma, After Effects, Principle',
+          role: 'UI/UX设计师',
+          duration: '2023年2月 - 2023年6月'
+        },
+
+
+        'modal-be-1': {
+          title: '矿卡',
+          image: 'url(./images/works/B_luntai.jpg)',
+          description: '该系统用于实时监测露天矿卡车的运行状态、设备损耗周期，以及轮胎胎压、温度、运行时长等关键参数，实现全流程智能管理与预警。',
+          tags: ['实时监控', '数据分析'],
           stats: { users: '30K+', satisfaction: '95%', conversion: '+28%' },
           tools: 'Figma, D3.js, ECharts',
           role: 'UI/UX设计师',
           duration: '2022年6月 - 2022年10月'
         },
-        'modal-data-2': {
-          title: '监控Dashboard',
-          image: 'url(./images/works/pc-monitoring.jpeg)',
-          description: '服务器监控、性能指标实时可视化。帮助运维团队实时掌握系统状态，快速响应异常情况。',
-          tags: ['监控', '实时', 'DevOps'],
+        'modal-be-2': {
+          title: 'C+1披萨',
+          image: 'url(./images/works/PC_1Pizza.jpg)',
+          description: '服为企业项目管理人员提供方便快捷的项目管理工具，实现加盟、签约、盈收等线上操作。',
+          tags: ['监控', '实时', '服务'],
           stats: { users: '15K+', satisfaction: '97%', conversion: '+32%' },
           tools: 'Figma, Grafana, D3.js',
           role: 'UI/UX设计师',
           duration: '2022年3月 - 2022年6月'
         },
+        'modal-be-3': {
+          title: 'LINELINK 云控中',
+          image: 'url(./images/works/PC_LINELINK.jpg)',
+          description: 'B 端工业级云端控制平台。',
+          tags: ['云端控制', '工业监控'],
+          stats: { users: '15K+', satisfaction: '97%', conversion: '+32%' },
+          tools: 'Figma, Grafana, D3.js',
+          role: 'UI/UX设计师',
+          duration: '2022年3月 - 2022年6月'
+        },
+
+
+
+
+
         // APP分类
-        'modal-fintech-1': {
-          title: '趣游',
-          image: 'url(./images/works/app_quyou.jpg)',
-          description: '这是一款面向年轻人的数字钱包应用，提供多币种管理、即时转账、账单记录等核心功能。设计采用简洁清爽的风格，强调数据的清晰呈现和操作的便捷性。通过深入的用户研究和A/B测试，优化了核心功能流程，将用户转化率提升了45%。',
-          tags: ['iOS', 'Android', '金融科技', '移动支付'],
+        'modal-ma-1': {
+          title: '随心搭',
+          image: 'url(./images/works/APP_suixinda.jpg)',
+          description: '「随心搭」APP 聚焦精致潮流男性，打造集穿搭分享、好物推荐、一站式购物于一体的专属平台，解决穿搭参考零散、分享购物脱节的问题，为不同职业、地域的男性提供个性化穿搭与购物服务。',
+          tags: ['iOS', 'Android', '购物', '分享'],
           stats: { users: '500K+', satisfaction: '98%', conversion: '+45%' },
           tools: 'Figma, Sketch, Principle',
           role: 'UI/UX设计师',
           duration: '2023年6月 - 2023年10月'
         },
-        'modal-fintech-2': {
-          title: '投资理财平台',
-          image: 'url(./images/works/app-investment.jpeg)',
-          description: '基金、股票、理财产品一站式投资平台，数据可视化设计。通过直观的图表和清晰的数据展示，帮助用户轻松理解复杂的金融信息，做出明智的投资决策。',
-          tags: ['iOS', '数据可视化', '金融科技'],
-          stats: { users: '300K+', satisfaction: '96%', conversion: '+38%' },
-          tools: 'Figma, D3.js, After Effects',
-          role: 'UI/UX设计师',
-          duration: '2023年3月 - 2023年7月'
-        },
-        'modal-fintech-3': {
-          title: '保险服务APP',
-          image: 'url(./images/works/app-insurance.jpeg)',
-          description: '在线投保、保单管理、理赔申请全流程设计。简化复杂的保险流程，让用户能够轻松完成投保和理赔操作，提升用户体验和满意度。',
-          tags: ['Android', '保险', '移动端'],
-          stats: { users: '200K+', satisfaction: '94%', conversion: '+25%' },
+        'modal-ma-2': {
+          title: 'SINZ购物',
+          image: 'url(./images/works/APP_SINZ.jpg)',
+          description: '「「SINZ」购物 APP 专为墨西哥用户设计，聚焦本地消费需求，打造全品类一站式购物平台，解决购物分散、服务不足的痛点，为用户提供便捷、多元的线上购物服务。',
+          tags: ['便捷', '线上', '购物'],
+          stats: { users: '500K+', satisfaction: '98%', conversion: '+45%' },
           tools: 'Figma, Sketch, Principle',
           role: 'UI/UX设计师',
-          duration: '2023年1月 - 2023年4月'
+          duration: '2023年6月 - 2023年10月'
         },
-        'modal-fitness-1': {
-          title: '健身追踪应用',
-          image: 'url(./images/works/app-fitness.jpeg)',
-          description: '运动数据记录、训练计划、健康数据分析。帮助用户追踪运动进度，制定科学的健身计划，实现健康目标。',
-          tags: ['健身', '健康', 'iOS', 'Android'],
-          stats: { users: '400K+', satisfaction: '97%', conversion: '+42%' },
-          tools: 'Figma, Principle, Lottie',
-          role: 'UI/UX设计师',
-          duration: '2022年10月 - 2023年2月'
-        },
-        'modal-fitness-2': {
-          title: '冥想放松APP',
-          image: 'url(./images/works/app-meditation.jpeg)',
-          description: '冥想课程、呼吸训练、睡眠改善工具。通过温和的视觉设计和沉浸式的音频体验，帮助用户缓解压力，改善睡眠质量。',
-          tags: ['冥想', '心理健康', 'iOS'],
-          stats: { users: '150K+', satisfaction: '99%', conversion: '+55%' },
-          tools: 'Figma, After Effects, Principle',
-          role: 'UI/UX设计师',
-          duration: '2022年6月 - 2022年10月'
-        },
-        'modal-social-1': {
-          title: '兴趣社区APP',
-          image: 'url(./images/works/app-social.jpeg)',
-          description: '基于兴趣爱好的垂直社交平台设计。让用户能够找到志同道合的朋友，分享兴趣内容，建立有意义的社交连接。',
-          tags: ['社交', '社区', 'iOS', 'Android'],
-          stats: { users: '800K+', satisfaction: '92%', conversion: '+35%' },
-          tools: 'Figma, Sketch, Framer',
-          role: 'UI/UX设计师',
-          duration: '2022年2月 - 2022年6月'
-        },
-        'modal-social-2': {
-          title: '短视频平台',
-          image: 'url(./images/works/app-video.jpeg)',
-          description: '短视频拍摄、编辑、分享一体化平台。提供丰富的特效和滤镜，让用户轻松创作精彩视频内容。',
-          tags: ['短视频', '娱乐', 'iOS', 'Android'],
-          stats: { users: '1.2M+', satisfaction: '95%', conversion: '+50%' },
-          tools: 'Figma, After Effects, Principle',
-          role: 'UI/UX设计师',
-          duration: '2021年9月 - 2022年2月'
-        },
-        // B端后台
-        'modal-web-1': {
-          title: '企业CRM系统',
-          image: 'url(./images/works/featured-fintech.jpeg)',
-          description: '客户关系管理系统，包含销售、营销、服务模块。帮助企业高效管理客户关系，提升销售效率和客户满意度。',
-          tags: ['B2B', 'Dashboard', '企业级'],
-          stats: { users: '50K+', satisfaction: '93%', conversion: '+30%' },
-          tools: 'Figma, Sketch, InVision',
-          role: 'UI/UX设计师',
-          duration: '2023年5月 - 2023年9月'
-        },
-        'modal-web-2': {
-          title: '在线教育平台',
-          image: 'url(./images/works/pc-education.jpeg)',
-          description: '课程学习、直播授课、作业提交全流程设计。为学生和教师提供便捷的在线教学体验，支持多种互动方式。',
-          tags: ['教育', 'SaaS', 'Web应用'],
-          stats: { users: '100K+', satisfaction: '96%', conversion: '+40%' },
-          tools: 'Figma, After Effects, Principle',
-          role: 'UI/UX设计师',
-          duration: '2023年2月 - 2023年6月'
-        },
-        'modal-web-3': {
-          title: '项目管理工具',
-          image: 'url(./images/works/pc-project-management.jpeg)',
-          description: '任务管理、团队协作、进度跟踪工具。帮助团队高效协作，清晰掌握项目进度，提升工作效率。',
-          tags: ['协作', '效率', 'SaaS'],
-          stats: { users: '80K+', satisfaction: '94%', conversion: '+35%' },
-          tools: 'Figma, Sketch, Framer',
-          role: 'UI/UX设计师',
-          duration: '2022年10月 - 2023年2月'
-        },
-        'modal-data-1': {
-          title: 'BI分析平台',
-          image: 'url(./images/works/pc-bi.jpeg)',
-          description: '商业智能数据分析平台，支持多种图表类型。帮助企业快速洞察数据，做出数据驱动的决策。',
-          tags: ['BI', '数据分析', 'Dashboard'],
-          stats: { users: '30K+', satisfaction: '95%', conversion: '+28%' },
-          tools: 'Figma, D3.js, ECharts',
-          role: 'UI/UX设计师',
-          duration: '2022年6月 - 2022年10月'
-        },
-        'modal-data-2': {
-          title: '监控Dashboard',
-          image: 'url(./images/works/pc-monitoring.jpeg)',
-          description: '服务器监控、性能指标实时可视化。帮助运维团队实时掌握系统状态，快速响应异常情况。',
-          tags: ['监控', '实时', 'DevOps'],
-          stats: { users: '15K+', satisfaction: '97%', conversion: '+32%' },
-          tools: 'Figma, Grafana, D3.js',
-          role: 'UI/UX设计师',
-          duration: '2022年3月 - 2022年6月'
-        },
+
+        
+
         // 小程序分类
         'modal-mp-1': {
           title: '趣游',
-          image: 'url(./images/works/app_quyou.jpg)',
-          description: '「趣游」小程序是一款面向全年龄段、具有独立思考能力的成年用户的旅游公共服务平台。我们旨在打造旅游业领先的小程序生态，核心解决了用户在旅游过程中面临的 **“方案适配性差、公共服务信息零散、定制化门槛高”** 三大痛点，提供了从信息查询、个性化规划到一键预订的专业、便捷、个性化的旅游全流程服务。',
+          image: 'url(./images/works/XCX_quyou.jpg)',
+          description: '「趣游」小程序是一款面向全年龄段、具有独立思考能力的成年用户的旅游公共服务平台。我们旨在打造旅游业领先的小程序生态，核心解决了用户在旅游过程中面临的 “方案适配性差、公共服务信息零散、定制化门槛高” 三大痛点，提供了从信息查询、个性化规划到一键预订的专业、便捷、个性化的旅游全流程服务。',
           tags: ['本地生活', 'O2O', '小程序'],
           stats: { users: '600K+', satisfaction: '94%', conversion: '+38%' },
           tools: 'Figma',
@@ -1245,8 +1181,8 @@
           duration: '2023年7月 - 2023年10月'
         },
         'modal-mp-2': {
-          title: '企业名片小程序',
-          image: 'url(./images/works/mini-business-card.jpeg)',
+          title: '撒野',
+          image: 'url(./images/works/XCX_saye.jpg)',
           description: '企业展示、产品介绍、在线咨询。帮助企业打造专业的数字化名片，提升品牌形象。',
           tags: ['企业', '展示', '小程序'],
           stats: { users: '50K+', satisfaction: '96%', conversion: '+45%' },
@@ -1255,30 +1191,142 @@
           duration: '2023年4月 - 2023年6月'
         },
         'modal-mp-3': {
-          title: '预约挂号小程序',
-          image: 'url(./images/works/mini-hospital.jpeg)',
-          description: '医院预约挂号、医生排班、在线问诊。简化就医流程，让患者能够便捷地预约医疗服务。',
-          tags: ['医疗', '预约', '小程序'],
+          title: '电子桌牌',
+          image: 'url(./images/works/XCX_dzzp.jpg)',
+          description: '软硬件一体化设计，操作简单高效，适配会议室、办公室、报告厅、政务大厅等多类办公场景，减少纸质物料消耗，实现会议信息数字化、可视化、智能化管理，提升整体办公简洁度与商务质感。',
+          tags: ['智慧', '绿色', '小程序'],
           stats: { users: '200K+', satisfaction: '98%', conversion: '+52%' },
           tools: 'Figma, Principle, After Effects',
           role: 'UI/UX设计师',
           duration: '2023年1月 - 2023年4月'
         },
-        'modal-ali-1': {
-          title: '会员管理小程序',
-          image: 'url(./images/works/mini-membership.jpeg)',
-          description: '会员积分、优惠券、消费记录管理。帮助商家高效管理会员，提升用户粘性和复购率。',
-          tags: ['会员', 'CRM', '小程序'],
-          stats: { users: '100K+', satisfaction: '93%', conversion: '+40%' },
-          tools: 'Figma, Sketch',
+        'modal-mp-4': {
+          title: '海食链',
+          image: 'url(./images/works/XCX_hsl-shd.jpg)',
+          description: '本项目为海口食品经营商户打造的线上化合规管理工具，帮助商户规范经营、降低食品安全合规风险。',
+          tags: ['溯源', '安全', '小程序'],
+          stats: { users: '200K+', satisfaction: '98%', conversion: '+52%' },
+          tools: 'Figma, Principle, After Effects',
           role: 'UI/UX设计师',
-          duration: '2022年10月 - 2023年1月'
+          duration: '2023年1月 - 2023年4月'
         },
+
+
+        // 平面分类
+        'modal-brand-1': {
+          title: '流固动力',
+          image: 'url(./images/works/PM_hc.jpg)',
+          description: '公司以 “自主可控、软件报国” 为理念，聚焦流动、传热、燃烧、结构强度、多物理场耦合等核心仿真技术，为高端装备研发提供全链路数字化解决方案。',
+          tags: ['宣传', '品牌', '画册'],
+          stats: { users: 'N/A', satisfaction: '100%', conversion: 'N/A' },
+          tools: 'Illustrator, Photoshop, InDesign',
+          role: '品牌设计师',
+          duration: '2023年8月 - 2023年10月'
+        },
+
+        'modal-hb-1': {
+          title: '鸿哲智能节日系列公众号海报',
+          image: 'url(./images/works/PM_hzzn_hb.jpg)',
+          description: '结合品牌调性与节日主题，打造风格统一的系列宣传海报，助力企业公众号日常运营与品牌传播。',
+          tags: ['宣传', '品牌', '公众号'],
+          stats: { users: 'N/A', satisfaction: '100%', conversion: 'N/A' },
+          tools: 'Illustrator, Photoshop, InDesign',
+          role: '品牌设计师',
+          duration: '2023年8月 - 2023年10月'
+        },
+        'modal-hb-2': {
+          title: '流固动力品牌视觉物料合集',
+          image: 'url(./images/works/PM_lgdl_hb.jpg)',
+          description: '流固动力品牌视觉物料合集',
+          tags: ['宣传'],
+          stats: { users: 'N/A', satisfaction: '100%', conversion: 'N/A' },
+          tools: 'Illustrator, Photoshop, InDesign',
+          role: '品牌设计师',
+          duration: '2023年8月 - 2023年10月'
+        },
+        
+
+        // 数据可视化分类
+        'modal-DVS-1': {
+          title: '露天矿数字矿山系统',
+          image: 'url(./images/works/DVS_LTK.jpg)',
+          description: '鄂尔多斯某露天矿场在传统开采模式下，存在生产流程不透明、工艺管控难度大、数据分散难整合等问题，亟需一套可视化数字系统，实现矿山生产全流程的数字化管控。',
+          tags: ['数字矿山', 'GIS', '可视化'],
+          stats: { users: 'N/A', satisfaction: '100%', conversion: 'N/A' },
+          tools: 'Midjourney, Stable Diffusion, Photoshop',
+          role: 'AI艺术家',
+          duration: '2023年10月 - 至今'
+        },
+        'modal-DVS-2': {
+          title: '中控分布式可视化大屏',
+          image: 'url(./images/works/DVS_ZKFBS.jpg)',
+          description: '数据可视化 + 工业中控 + 智能管控交叉赛道的项目，核心解决了传统中控系统分散、操作复杂、状态不透明的痛点。',
+          tags: ['分布式', '智能管控', '数据大屏'],
+          stats: { users: 'N/A', satisfaction: '100%', conversion: 'N/A' },
+          tools: 'Midjourney, Stable Diffusion, Photoshop',
+          role: 'AI艺术家',
+          duration: '2023年8月 - 至今'
+        },
+        'modal-DVS-3': {
+          title: '神木引黄支线综智能监控平台',
+          image: 'url(./images/works/DVS_SMY.jpg)',
+          description: '面向水利引黄工程场景，实现管线运行状态、流量数据、设备工况的可视化集中监控与异常预警，保障供水安全。',
+          tags: ['数据监控', '数据大屏'],
+          stats: { users: 'N/A', satisfaction: '100%', conversion: 'N/A' },
+          tools: 'Midjourney, Stable Diffusion, Photoshop',
+          role: 'AI艺术家',
+          duration: '2023年8月 - 至今'
+        },
+
+
+        // 建模分类
+        'modal-3d-1': {
+          title: '高阻值电阻箱',
+          image: 'url(./images/works/3D_1.jpg)',
+          description: '一种高精度、可调节的高值电阻标准件，可以提供非常稳定、精确的大电阻值（比如兆欧级甚至更高）。',
+          tags: ['产品', '3D建模'],
+          stats: { users: 'N/A', satisfaction: '100%', conversion: 'N/A' },
+          tools: 'Blender, Cinema 4D, Octane',
+          role: '3D设计师',
+          duration: '2023年7月 - 2023年9月'
+        },
+        'modal-3d-2': {
+          title: '精密电阻箱',
+          image: 'url(./images/works/3D_2.jpg)',
+          description: '一种通用型高精度可变电阻标准器，能提供多种标准电阻值。',
+          tags: ['精密', '3D建模'],
+          stats: { users: 'N/A', satisfaction: '100%', conversion: 'N/A' },
+          tools: 'Blender, V-Ray, Photoshop',
+          role: '3D设计师',
+          duration: '2023年4月 - 2023年6月'
+        },
+        'modal-3d-3': {
+          title: '多功能校准源',
+          image: 'url(./images/works/3D_3.jpg)',
+          description: '一种高精度的信号发生器，能输出标准的电压、电流、频率等信号。',
+          tags: ['设备', '3D建模'],
+          stats: { users: 'N/A', satisfaction: '100%', conversion: 'N/A' },
+          tools: 'Blender, V-Ray, Photoshop',
+          role: '3D设计师',
+          duration: '2023年4月 - 2023年6月'
+        },
+        'modal-3d-4': {
+          title: '示波器',
+          image: 'url(./images/works/3D_4.jpg)',
+          description: '电子工程师最常用的信号波形观测仪器，能把电信号的变化过程以图像的形式显示出来',
+          tags: ['材质', '3D建模'],
+          stats: { users: 'N/A', satisfaction: '100%', conversion: 'N/A' },
+          tools: 'Blender, V-Ray, Photoshop',
+          role: '3D设计师',
+          duration: '2023年4月 - 2023年6月'
+        },
+
+
         // 电商分类
         'modal-ec-b2c-1': {
-          title: '时尚服饰商城',
-          image: 'url(./images/works/ecom-fashion.jpeg)',
-          description: '服装配饰电商网站，包含商品浏览、购物车、支付流程。提供流畅的购物体验，提升用户购买转化。',
+          title: '鸿哲智能京东店铺专业音响',
+          image: 'url(./images/works/PM_hezn_zt.jpg)',
+          description: '专业音响设备代理商与音视频系统方案解决商。',
           tags: ['时尚', '商城', 'B2C'],
           stats: { users: '500K+', satisfaction: '95%', conversion: '+48%' },
           tools: 'Figma, Sketch, Principle',
@@ -1286,87 +1334,29 @@
           duration: '2023年6月 - 2023年9月'
         },
         'modal-ec-b2c-2': {
-          title: '生鲜电商平台',
-          image: 'url(./images/works/ecom-fresh.jpeg)',
+          title: '鸿哲智能店铺装修',
+          image: 'url(./images/works/PM_hzzn_dpzx.jpg)',
           description: '生鲜食品在线购买，支持配送与自提。保证食材新鲜，提供便捷的购物体验。',
-          tags: ['生鲜', '配送', 'B2C'],
+          tags: ['代理商', '品牌', 'B2C'],
           stats: { users: '300K+', satisfaction: '97%', conversion: '+55%' },
           tools: 'Figma, After Effects, Principle',
           role: 'UI/UX设计师',
           duration: '2023年3月 - 2023年6月'
         },
-        'modal-ec-b2b-1': {
-          title: '工业采购平台',
-          image: 'url(./images/works/ecom-industrial.jpeg)',
-          description: '工业用品B2B采购，企业级供应链管理。为企业提供高效的采购解决方案，降低采购成本。',
-          tags: ['工业', 'B2B', '供应链'],
+        'modal-ec-b2c-3': {
+          title: 'S1 Pro+_详情页',
+          image: 'url(./images/works/PM_hzzn_xqy.jpg)',
+          description: 'Bose S1 Pro+ 便携无线专业扩声音箱，体积小巧、声压充足，支持直播与户外使用，适配小型演出、K 歌、会议及户外场景。',
+          tags: ['品质', 'B2c'],
           stats: { users: '10K+', satisfaction: '92%', conversion: '+25%' },
           tools: 'Figma, Sketch, InVision',
           role: 'UI/UX设计师',
           duration: '2022年11月 - 2023年3月'
         },
-        // 平面分类
-        'modal-brand-1': {
-          title: '科技公司品牌VI',
-          image: 'url(./images/works/graphic-tech-vi.jpeg)',
-          description: '包括Logo、名片、宣传册、PPT模板等全套VI设计。为科技公司打造专业、现代的品牌形象。',
-          tags: ['VI', '品牌', 'Logo设计'],
-          stats: { users: 'N/A', satisfaction: '100%', conversion: 'N/A' },
-          tools: 'Illustrator, Photoshop, InDesign',
-          role: '品牌设计师',
-          duration: '2023年8月 - 2023年10月'
-        },
-        'modal-brand-2': {
-          title: '餐饮品牌设计',
-          image: 'url(./images/works/graphic-restaurant.jpeg)',
-          description: '餐饮品牌视觉系统，包括Logo、菜单、包装设计。为餐饮品牌打造独特的视觉识别，提升品牌认知度。',
-          tags: ['餐饮', '包装', '品牌'],
-          stats: { users: 'N/A', satisfaction: '100%', conversion: 'N/A' },
-          tools: 'Illustrator, Photoshop, InDesign',
-          role: '品牌设计师',
-          duration: '2023年5月 - 2023年7月'
-        },
-        'modal-poster-1': {
-          title: '活动宣传海报',
-          image: 'url(./images/works/graphic-event.jpeg)',
-          description: '科技峰会活动宣传海报系列设计。通过视觉冲击力强的设计，吸引目标受众参与活动。',
-          tags: ['活动', '宣传', '海报'],
-          stats: { users: 'N/A', satisfaction: '100%', conversion: '+60%' },
-          tools: 'Photoshop, Illustrator',
-          role: '平面设计师',
-          duration: '2023年9月'
-        },
-        'modal-poster-2': {
-          title: '节日促销海报',
-          image: 'url(./images/works/graphic-promo.jpeg)',
-          description: '电商节日促销活动海报设计。通过鲜明的视觉元素，突出促销信息，刺激用户购买。',
-          tags: ['促销', '节日', '海报'],
-          stats: { users: 'N/A', satisfaction: '100%', conversion: '+75%' },
-          tools: 'Photoshop, Illustrator',
-          role: '平面设计师',
-          duration: '2023年11月'
-        },
-        // 建模分类
-        'modal-model-1': {
-          title: '电子产品建模',
-          image: 'url(./images/works/model-electronics.jpeg)',
-          description: '智能手机、耳机等电子产品3D建模与渲染。真实呈现产品设计细节，用于产品宣传和展示。',
-          tags: ['产品', '渲染', '3D建模'],
-          stats: { users: 'N/A', satisfaction: '100%', conversion: 'N/A' },
-          tools: 'Blender, Cinema 4D, Octane',
-          role: '3D设计师',
-          duration: '2023年7月 - 2023年9月'
-        },
-        'modal-model-2': {
-          title: '家具产品设计',
-          image: 'url(./images/works/model-furniture.jpeg)',
-          description: '现代风格家具3D建模与材质设计。展示家具产品的设计细节和材质质感，用于产品展示和营销。',
-          tags: ['家具', '材质', '3D建模'],
-          stats: { users: 'N/A', satisfaction: '100%', conversion: 'N/A' },
-          tools: 'Blender, V-Ray, Photoshop',
-          role: '3D设计师',
-          duration: '2023年4月 - 2023年6月'
-        },
+
+
+
+
         'modal-scene-1': {
           title: '室内空间建模',
           image: 'url(./images/works/model-interior.jpeg)',
@@ -1376,37 +1366,6 @@
           tools: 'Blender, 3ds Max, V-Ray',
           role: '3D设计师',
           duration: '2023年1月 - 2023年4月'
-        },
-        // AIGC分类
-        'modal-aigc-1': {
-          title: 'AI插画创作',
-          image: 'url(./images/works/aigc-illustration.jpeg)',
-          description: '使用Midjourney、Stable Diffusion创作的商业插画。探索AI辅助创作，产出高质量的视觉内容。',
-          tags: ['插画', '商业', 'AI创作'],
-          stats: { users: 'N/A', satisfaction: '100%', conversion: 'N/A' },
-          tools: 'Midjourney, Stable Diffusion, Photoshop',
-          role: 'AI艺术家',
-          duration: '2023年10月 - 至今'
-        },
-        'modal-aigc-2': {
-          title: 'AI角色设计',
-          image: 'url(./images/works/aigc-character.jpeg)',
-          description: '游戏角色、虚拟形象的AI辅助设计。利用AI工具快速生成角色概念，加速设计迭代。',
-          tags: ['角色', '游戏', 'AI创作'],
-          stats: { users: 'N/A', satisfaction: '100%', conversion: 'N/A' },
-          tools: 'Midjourney, Stable Diffusion, Photoshop',
-          role: 'AI艺术家',
-          duration: '2023年8月 - 至今'
-        },
-        'modal-aidesign-1': {
-          title: 'AI设计工作流',
-          image: 'url(./images/works/aigc-workflow.jpeg)',
-          description: '集成AI工具的设计流程，提升设计效率。探索AI在设计流程中的应用，优化工作流程。',
-          tags: ['工作流', '效率', 'AI工具'],
-          stats: { users: 'N/A', satisfaction: '100%', conversion: '+200%' },
-          tools: 'Figma, Midjourney, ChatGPT',
-          role: '设计系统架构师',
-          duration: '2023年6月 - 至今'
         }
       };
       
@@ -1423,11 +1382,13 @@
 
 
       title.textContent = data.title;
-      // 提取图片URL（去掉url()包裹）; 第一行 弹窗图片大小
+      // 提取图片URL（去掉url()包裹）; 第一行 弹窗图片大小。弹窗底部信息
       const imageUrl = data.image.replace(/url\((.*)\)/, '$1');
       body.innerHTML = `
         <img class="modal-image" src="${imageUrl}" alt="${data.title}" style="width: 100%; border-radius: 0.75rem; margin-bottom: 1.5rem;">
-        <div class="modal-stats">
+        
+        <!-- 隐藏 -->
+        <!-- <div class="modal-stats">
           <div class="modal-stat-item">
             <div class="modal-stat-value">${data.stats.users}</div>
             <div class="modal-stat-label">用户数量</div>
@@ -1440,25 +1401,34 @@
             <div class="modal-stat-value">${data.stats.conversion}</div>
             <div class="modal-stat-label">转化率提升</div>
           </div>
-        </div>
+        </div> -->
+
+
         <div class="modal-section">
           <h3 class="modal-section-title">项目描述</h3>
           <p class="modal-description">${data.description}</p>
         </div>
+
+
         <div class="modal-section">
-          <h3 class="modal-section-title">使用技术</h3>
+          <h3 class="modal-section-title">标签</h3>
           <div class="modal-tags">
             ${data.tags.map(tag => `<span class="modal-tag">${tag}</span>`).join('')}
           </div>
         </div>
-        <div class="modal-section">
+
+
+        <!-- 隐藏 -->
+        <!-- <div class="modal-section">
           <h3 class="modal-section-title">项目信息</h3>
           <p style="color: var(--text-secondary);">
             <strong>工具：</strong>${data.tools}<br>
             <strong>角色：</strong>${data.role}<br>
             <strong>时间：</strong>${data.duration}
           </p>
-        </div>
+        </div> -->
+        
+        
       `;
       
       overlay.classList.add('active');
